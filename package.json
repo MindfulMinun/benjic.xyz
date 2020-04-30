@@ -1,0 +1,24 @@
+{
+  "name": "11ty",
+  "version": "0.1.0",
+  "description": "A static site built with 11ty",
+  "main": "dist/index.js",
+  "author": "MindfulMinun <importantmails4bc@gmail.com> (https://benjic.xyz)",
+  "contributors": [],
+  "homepage": "https://github.com/MindfulMinun/11ty",
+  "repository": "github:MindfulMinun/11ty",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf ./dist && npx @11ty/eleventy",
+    "watch": "rm -rf ./dist && npx @11ty/eleventy --serve --port=1337",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=8.0.0 <11.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  },
+  "dependencies": {}
+}
