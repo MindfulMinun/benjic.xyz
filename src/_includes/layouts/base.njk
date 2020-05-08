@@ -1,35 +1,47 @@
 ---
 lang: en-US
+accent: "#448aff"
 ---
 <!doctype html>
 <!--
     Made with love by MindfulMinun
-    https://benjic.xyz
+    ~~https://benjic.xyz~~
+    localhost:1337
 -->
 <html lang="{{ lang }}">
 <head>
     <meta charset="utf-8">
-    <title>{{ title }}</title>
+    <title>{{ title }} • Benji</title>
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#1e1e1e">
+    <meta name="theme-color" content="{{ accent }}">
 
-    <!-- OpenGraph & Twitter -->
-    <meta name="og:title"       content="Notes">
-    <meta name="og:description" content="I’m supposed to be studying. You too, probably.">
-    <meta name="description"    content="I’m supposed to be studying. You too, probably.">
-    <meta name="og:type"        content="website">
-    <meta name="og:url"         content="https://notes.benjic.xyz/">
+    <!-- OpenGraph -->
+    <meta name="og:title"              content="{{ title }}">
+    <meta name="twitter:title"         content="{{ title }}">
+    <meta name="og:url"                content="{{ b.url }}{{ page.url }}">
+    {% if desc -%}
+    <meta name="og:description"        content="{{ desc }}">
+    <meta name="description"           content="{{ desc }}">
+    <meta name="twitter:description"   content="{{ desc }}">
+    {%- endif %}
+    <meta name="og:type"               content="website">
+    {% if image -%}
+    <!-- Image -->
+    <meta name="og:image"              content="{{ b.url }}{{ image.src }}">
+    <meta name="twitter:image"         content="{{ b.url }}{{ image.src }}">
+    <meta name="og:image:alt"          content="{{ image.alt }}">
+    <meta name="twitter:image:alt"     content="{{ image.alt }}">
+    <meta name="twitter:card"          content="summary_large_image">
+    {%- endif %}
+    <meta name="twitter:site"          content="{{ b.twitter.handle }}">
+    <meta name="twitter:creator"       content="{{ b.twitter.handle }}">
+    <meta name="twitter:widgets:theme" content="dark">
+    <meta name="twitter:widgets:link-color"   content="#448aff">
+    <meta name="twitter:widgets:border-color" content="#448aff">
 
-    <meta property="og:image" content="URL to image for thumbnail (square 350x350px)" />
-
-    <!-- Begin Twitter tags -->
-    <meta name="twitter:title" content="Your page title" />
-    <meta name="twitter:url" content="Your page URL" />
-    <meta name="twitter:card" content="Your page description" />
-    <meta name="twitter:image" content="URL to image for thumbnail (square 350x350px)" />
-    <!-- End Twitter tags -->
-
+    <!-- Styles -->
     <link rel="stylesheet" href="/static/styles/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Roboto:100,100i,300,300i,400,400i,500,500i|Roboto+Mono:300,300i,400,400i&display=swap">
     <link rel="stylesheet" href="/static/styles/base.css">
@@ -39,5 +51,6 @@ lang: en-US
         {{ content | safe }}
     </main>
     {% footer %}
+    <script src="/static/scripts/main.js"></script>
 </body>
 </html>

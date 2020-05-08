@@ -35,7 +35,7 @@ html, body {
     display: block;
 }
 .footer__ribbon {
-    background-color: #323232;
+    background: rgba(0,0,0,0.12);
 }
 .footer__ribbon p {
     margin: 0;
@@ -63,10 +63,6 @@ html, body {
 .sticky {
     margin: 1em -1em;
     display: block;
-}
-.sticky img {
-    width: 100%;
-    height: auto;
 }
 .sticky__label {
     margin: .5em 1em;

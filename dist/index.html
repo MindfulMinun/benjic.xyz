@@ -1,32 +1,39 @@
 <!doctype html>
 <!--
     Made with love by MindfulMinun
-    https://benjic.xyz
+    ~~https://benjic.xyz~~
+    localhost:1337
 -->
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
     <title>About me • Benji</title>
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#1e1e1e">
+    <meta name="theme-color" content="#448aff">
 
-    <!-- OpenGraph & Twitter -->
-    <meta name="og:title"       content="Notes">
-    <meta name="og:description" content="I’m supposed to be studying. You too, probably.">
-    <meta name="description"    content="I’m supposed to be studying. You too, probably.">
-    <meta name="og:type"        content="website">
-    <meta name="og:url"         content="https://notes.benjic.xyz/">
+    <!-- OpenGraph -->
+    <meta name="og:title"              content="About me">
+    <meta name="twitter:title"         content="About me">
+    <meta name="og:url"                content="http://localhost:1337/">
+    <meta name="og:description"        content="Hi, I’m Benji. I’m supposed to be studying.">
+    <meta name="description"           content="Hi, I’m Benji. I’m supposed to be studying.">
+    <meta name="twitter:description"   content="Hi, I’m Benji. I’m supposed to be studying.">
+    <meta name="og:type"               content="website">
+    <!-- Image -->
+    <meta name="og:image"              content="http://localhost:1337/static/images/retrato-1-1.jpeg">
+    <meta name="twitter:image"         content="http://localhost:1337/static/images/retrato-1-1.jpeg">
+    <meta name="og:image:alt"          content="Benji">
+    <meta name="twitter:image:alt"     content="Benji">
+    <meta name="twitter:card"          content="summary_large_image">
+    <meta name="twitter:site"          content="@MindfulMinun">
+    <meta name="twitter:creator"       content="@MindfulMinun">
+    <meta name="twitter:widgets:theme" content="dark">
+    <meta name="twitter:widgets:link-color"   content="#448aff">
+    <meta name="twitter:widgets:border-color" content="#448aff">
 
-    <meta property="og:image" content="URL to image for thumbnail (square 350x350px)" />
-
-    <!-- Begin Twitter tags -->
-    <meta name="twitter:title" content="Your page title" />
-    <meta name="twitter:url" content="Your page URL" />
-    <meta name="twitter:card" content="Your page description" />
-    <meta name="twitter:image" content="URL to image for thumbnail (square 350x350px)" />
-    <!-- End Twitter tags -->
-
+    <!-- Styles -->
     <link rel="stylesheet" href="/static/styles/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Roboto:100,100i,300,300i,400,400i,500,500i|Roboto+Mono:300,300i,400,400i&display=swap">
     <link rel="stylesheet" href="/static/styles/base.css">
@@ -34,64 +41,67 @@
 <body class="flex flex--column">
     <main class="container flex-grow">
         <h1>Hi, I’m Benji.</h1>
-<p>I should probably be studying.</p>
+<p>I’m supposed to be studying.</p>
 <hr>
-<p>Hi, I’m Benji. You might know me as <a href="https://twitter.com/MindfulMinun">@MindfulMinun</a> online. I graduated from <a href="https://templejc.edu">Temple College</a> late last spring with associate degree. I’m currently a first-year junior at <a href="https://utdallas.edu">UT Dallas</a>, majoring in Computer Science. I like to write code and play the piano.</p>
+<p>Hi, I’m Benji. You might know me as <a href="https://twitter.com/MindfulMinun">@MindfulMinun</a> online. I graduated from <a href="https://templejc.edu">Temple College</a> late last spring with an associate’s degree. I’m currently a first-year junior at <a href="https://utdallas.edu">UT Dallas</a>, majoring in Computer Science. I like to write code and play the piano.</p>
 <div class="sticky">
-            <div class="ratiod" style="--ratio: 1;background: #306bad;">
-                <img src="/static/images/retrato-1-1.jpeg" aria-labelledby="id-q5plq7">
-            </div>
-            <p class="sticky__label" id="id-q5plq7">This is me.</p>
+        <div class="ratiod" style="--ratio: 1;background: #306bad;">
+            <img src="/static/images/retrato-1-1.jpeg" aria-labelledby="id-dd38rl">
         </div>
+        <p class="sticky__label" id="id-dd38rl">This is me.</p>
+    </div>
+<p>I love to code. It’s my dream to write code for a living. I picked up JavaScript during my freshman year of high school while messing around with Firefox Scratchpad. I naturally went on to learn the other two web languages, HTML and CSS. After 5 years, I’ve become fluent in front-end workflow, combining technologies ranging from client-side ServiceWorker to back-end Heroku, you name it.</p>
 
     </main>
-    <footer class="footer">
-            <div class="footer__ppal">
-                <div class="container">
-                    <div class="flex">
-                        <h3 class="sr-only">Footer</h3>
-                        <a class="footer__img" href="/">
-                            <span class="sr-only">Home</span>
-                            <img src="/static/images/pfp-2020.png" style="width: 100%; height: auto;" alt="">
-                        </a>
-                        <div class="flex-grow">
-                            <p>I’m supposed to be studying.</p>
-                            <h4 class="sr-only">Social links</h4>
-                            <ul class="a11y">
-                                <li>
-                                    <a href="https://twitter.com/MindfulMinun">
-                                        <span class="sr-only">Twitter</span>
-                                        <span class="icon" style="--mask: url(/static/other/twitter.svg)"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/MindfulMinun/">
-                                        <span class="sr-only">GitHub</span>
-                                        <span class="icon" style="--mask: url(/static/other/github.svg)"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://keybase.io/mindfulminun">
-                                        <span class="sr-only">Keybase</span>
-                                        <span class="icon" style="--mask: url(/static/other/keybase.svg)"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/mindfulminun/">
-                                        <span class="sr-only">Instagram</span>
-                                        <span class="icon" style="--mask: url(/static/other/instagram.svg)"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    
+<footer class="footer">
+    <div class="footer__ppal">
+        <div class="container">
+            <div class="flex">
+                <h3 class="sr-only">Footer</h3>
+                <a class="footer__img" href="/">
+                    <span class="sr-only">Home</span>
+                    <img src="/static/images/pfp-2020.png" style="width: 100%; height: auto;" alt="">
+                </a>
+                <div class="flex-grow">
+                    <p>I’m supposed to be studying.</p>
+                    <h4 class="sr-only">Social links</h4>
+                    <ul class="a11y">
+                        <li>
+                            <a href="https://twitter.com/MindfulMinun">
+                                <span class="sr-only">Twitter</span>
+                                <span class="icon" style="--mask: url(/static/other/twitter.svg)"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/MindfulMinun/">
+                                <span class="sr-only">GitHub</span>
+                                <span class="icon" style="--mask: url(/static/other/github.svg)"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://keybase.io/mindfulminun">
+                                <span class="sr-only">Keybase</span>
+                                <span class="icon" style="--mask: url(/static/other/keybase.svg)"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/mindfulminun/">
+                                <span class="sr-only">Instagram</span>
+                                <span class="icon" style="--mask: url(/static/other/instagram.svg)"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer__ribbon">
-                <div class="container" data-blobify>
-                    <p>hello world</p>
-                </div>
-            </div>
-        </footer>
+        </div>
+    </div>
+    <div class="footer__ribbon">
+        <div class="container" data-blobify>
+            <p>hello world</p>
+        </div>
+    </div>
+</footer>
+    <script src="/static/scripts/main.js"></script>
 </body>
 </html>

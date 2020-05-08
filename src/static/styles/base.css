@@ -35,7 +35,7 @@ html, body {
     display: block;
 }
 .footer__ribbon {
-    background-color: #323232;
+    background: rgba(0,0,0,0.12);
 }
 .footer__ribbon p {
     margin: 0;
