@@ -15,15 +15,15 @@ module.exports = function () {
                     <h4 class="sr-only">Social links</h4>
                     <ul class="a11y">
                         <li>
-                            <a href="https://twitter.com/MindfulMinun">
-                                <span class="sr-only">Twitter</span>
-                                <span class="icon" style="--mask: url(/static/other/twitter.svg)"></span>
-                            </a>
-                        </li>
-                        <li>
                             <a href="https://github.com/MindfulMinun/">
                                 <span class="sr-only">GitHub</span>
                                 <span class="icon" style="--mask: url(/static/other/github.svg)"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/MindfulMinun">
+                                <span class="sr-only">Twitter</span>
+                                <span class="icon" style="--mask: url(/static/other/twitter.svg)"></span>
                             </a>
                         </li>
                         <li>

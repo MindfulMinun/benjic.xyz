@@ -55,7 +55,7 @@ html, body {
     padding: .5em;
 }
 .footer__img {
-    max-width: 120px;
+    width: 120px;
     display: block;
 }
 

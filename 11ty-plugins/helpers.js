@@ -64,7 +64,7 @@
 
     /**
      * Parses an HTML string
-     * @param {string} html The string parse, can have multiple root elements
+     * @param {string} html The string to parse, can have multiple root elements
      * @returns {HTMLCollection} The collection of parsed elements
      * @public
      * @author MindfulMinun
