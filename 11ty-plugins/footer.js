@@ -45,8 +45,9 @@ module.exports = function () {
     </div>
     <div class="footer__ribbon">
         <div class="container" data-blobify>
-            <p>hello world</p>
+            <!-- <p>hello world</p> -->
+            <p>Made with :3c by MindfulMinun</p>
         </div>
     </div>
-</footer>`
+</footer>`.replace(/\n\s*/g, '')
 }

@@ -37,13 +37,16 @@ accent: "#448aff"
     <meta name="twitter:site"          content="{{ b.twitter.handle }}">
     <meta name="twitter:creator"       content="{{ b.twitter.handle }}">
     <meta name="twitter:widgets:theme" content="dark">
-    <meta name="twitter:widgets:link-color"   content="#448aff">
-    <meta name="twitter:widgets:border-color" content="#448aff">
+    <meta name="twitter:widgets:link-color"   content="{{ accent }}">
+    <meta name="twitter:widgets:border-color" content="{{ accent }}">
 
     <!-- Styles -->
     <link rel="stylesheet" href="/static/styles/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Roboto:100,100i,300,300i,400,400i,500,500i|Roboto+Mono:300,300i,400,400i&display=swap">
     <link rel="stylesheet" href="/static/styles/base.css">
+    {% if styles %}
+    <style>{{ styles | safe }}</style>
+    {% endif %}
 </head>
 <body class="flex flex--column">
     <main class="container flex-grow">

@@ -16,9 +16,9 @@
     <meta name="og:title"              content="Projects">
     <meta name="twitter:title"         content="Projects">
     <meta name="og:url"                content="http://localhost:1337/p/">
-    <meta name="og:description"        content="P is for Projects. Here’s everything I’ve worked on in the past few years.">
-    <meta name="description"           content="P is for Projects. Here’s everything I’ve worked on in the past few years.">
-    <meta name="twitter:description"   content="P is for Projects. Here’s everything I’ve worked on in the past few years.">
+    <meta name="og:description"        content="P is for Projects. Here’s a few things I’ve worked on in the past few years.">
+    <meta name="description"           content="P is for Projects. Here’s a few things I’ve worked on in the past few years.">
+    <meta name="twitter:description"   content="P is for Projects. Here’s a few things I’ve worked on in the past few years.">
     <meta name="og:type"               content="website">
     
     <meta name="twitter:site"          content="@MindfulMinun">
@@ -31,64 +31,77 @@
     <link rel="stylesheet" href="/static/styles/normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Roboto:100,100i,300,300i,400,400i,500,500i|Roboto+Mono:300,300i,400,400i&display=swap">
     <link rel="stylesheet" href="/static/styles/base.css">
+    
+    <style>.project-list {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
+.project-list > li {
+    padding: .5em;
+}
+.project-list > li > strong {
+    font-size: 1.5em;
+}
+.project-list > li > p {
+    margin: 0;
+    margin-bottom: .5em;
+}
+.project-list > li > p {
+    margin: 0;
+    margin-bottom: .5em;
+}
+.links { margin-left: 1em; }
+.project-langs, .list-connective { opacity: .52; }
+.list-connective:last-child { display: none; }</style>
+    
 </head>
 <body class="flex flex--column">
     <main class="container flex-grow">
         <h1>Projects</h1>
-<p>P is for Projects. Here’s everything I’ve worked on in the past few years.</p>
+<p>P is for Projects. Here’s a few things I’ve worked on in the past few years. This isn’t a complete portfolio.</p>
 <p>Also check out my developer profiles on <a href="https://github.com/MindfulMinun">GitHub</a> and <a href="https://glitch.com/@MindfulMinun">Glitch</a>.</p>
 <hr>
+<ul class="a11y project-list"><li>
+        <strong>game-of-life</strong>
+        <p>A JavaScript implementation of Conway's Game of Life, using Uint32Arrays to make sure it runs lightning-fast.</p>
+        <div class="flex">
+            <span class="flex-grow project-langs">JavaScript</span><span class="links"><a href="https://github.com/MindfulMinun/game-of-life">GitHub</a>
+                    <span class="list-connective"> • </span></span></div>
+    </li><li>
+        <strong>Lambda</strong>
+        <p>Bringing complex numbers, matrices, and more to JavaScript, in pursuit of making fully-fledged calculator.</p>
+        <div class="flex">
+            <span class="flex-grow project-langs">JavaScript</span><span class="links"><a href="https://github.com/MindfulMinun/Lambda">GitHub</a>
+                    <span class="list-connective"> • </span></span></div>
+    </li><li>
+        <strong>d-flat</strong>
+        <p>Have you ever wondered what the derivative of a song would sound like?</p>
+        <div class="flex">
+            <span class="flex-grow project-langs">JavaScript</span><span class="links"><a href="https://github.com/MindfulMinun/d-flat">GitHub</a>
+                    <span class="list-connective"> • </span><a href="https://mm-d-flat.glitch.me/">View live on Glitch</a>
+                    <span class="list-connective"> • </span></span></div>
+    </li><li>
+        <strong>yt-for-me</strong>
+        <p>Steals videos from YouTube, how fun! One of my larger projects.</p>
+        <div class="flex">
+            <span class="flex-grow project-langs">JavaScript</span><span class="links"><a href="https://github.com/MindfulMinun/yt-for-me">GitHub</a>
+                    <span class="list-connective"> • </span><a href="https://yt.benjic.xyz">View live</a></span></div>
+    </li><li>
+        <strong>Haruka</strong>
+        <p>A useless Discord bot, one of my larger projects.</p>
+        <div class="flex">
+            <span class="flex-grow project-langs">CoffeeScript</span><span class="links"><a href="https://github.com/MindfulMinun/discord-haruka">GitHub</a>
+                    <span class="list-connective"> • </span></span></div>
+    </li><li>
+        <strong>A text based game</strong>
+        <p>A port of a text-based game written by in Python by a friend.</p>
+        <div class="flex">
+            <span class="flex-grow project-langs">CoffeeScript</span><span class="links"><a href="https://mm-text.glitch.me/">View live on Glitch</a>
+                    <span class="list-connective"> • </span></span></div>
+    </li></ul>
 
     </main>
-    
-<footer class="footer">
-    <div class="footer__ppal">
-        <div class="container">
-            <div class="flex">
-                <h3 class="sr-only">Footer</h3>
-                <a class="footer__img" href="/">
-                    <span class="sr-only">Home</span>
-                    <img src="/static/images/pfp-2020.png" style="width: 100%; height: auto;" alt="">
-                </a>
-                <div class="flex-grow">
-                    <p>I’m supposed to be studying.</p>
-                    <h4 class="sr-only">Social links</h4>
-                    <ul class="a11y">
-                        <li>
-                            <a href="https://github.com/MindfulMinun/">
-                                <span class="sr-only">GitHub</span>
-                                <span class="icon" style="--mask: url(/static/other/github.svg)"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/MindfulMinun">
-                                <span class="sr-only">Twitter</span>
-                                <span class="icon" style="--mask: url(/static/other/twitter.svg)"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://keybase.io/mindfulminun">
-                                <span class="sr-only">Keybase</span>
-                                <span class="icon" style="--mask: url(/static/other/keybase.svg)"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/mindfulminun/">
-                                <span class="sr-only">Instagram</span>
-                                <span class="icon" style="--mask: url(/static/other/instagram.svg)"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer__ribbon">
-        <div class="container" data-blobify>
-            <p>hello world</p>
-        </div>
-    </div>
-</footer>
+    <footer class="footer"><div class="footer__ppal"><div class="container"><div class="flex"><h3 class="sr-only">Footer</h3><a class="footer__img" href="/"><span class="sr-only">Home</span><img src="/static/images/pfp-2020.png" style="width: 100%; height: auto;" alt=""></a><div class="flex-grow"><p>I’m supposed to be studying.</p><h4 class="sr-only">Social links</h4><ul class="a11y"><li><a href="https://github.com/MindfulMinun/"><span class="sr-only">GitHub</span><span class="icon" style="--mask: url(/static/other/github.svg)"></span></a></li><li><a href="https://twitter.com/MindfulMinun"><span class="sr-only">Twitter</span><span class="icon" style="--mask: url(/static/other/twitter.svg)"></span></a></li><li><a href="https://keybase.io/mindfulminun"><span class="sr-only">Keybase</span><span class="icon" style="--mask: url(/static/other/keybase.svg)"></span></a></li><li><a href="https://www.instagram.com/mindfulminun/"><span class="sr-only">Instagram</span><span class="icon" style="--mask: url(/static/other/instagram.svg)"></span></a></li></ul></div></div></div></div><div class="footer__ribbon"><div class="container" data-blobify><!-- <p>hello world</p> --><p>Made with :3c by MindfulMinun</p></div></div></footer>
     <script src="/static/scripts/main.js"></script>
 </body>
 </html>

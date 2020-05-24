@@ -1,7 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 :root {
     --background: #1e1e1e;
     --on-background: #fafafa;

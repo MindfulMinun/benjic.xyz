@@ -2,7 +2,6 @@
   "name": "11ty",
   "version": "0.1.0",
   "description": "A static site built with 11ty",
-  "main": "dist/index.js",
   "author": "MindfulMinun <importantmails4bc@gmail.com> (https://benjic.xyz)",
   "contributors": [],
   "homepage": "https://github.com/MindfulMinun/11ty",

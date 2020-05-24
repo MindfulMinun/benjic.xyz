@@ -1,3 +1,13 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*:focus {
+    outline: white dashed 1px;
+    outline-offset: .125em;
+    outline-style: dashed;
+    outline-width: 1px;
+    outline-color: white;
+}
 html {
     line-height: 1.15; 
     -webkit-text-size-adjust: 100%; 
@@ -25,6 +35,7 @@ pre {
 a { background-color: transparent; }
 a[href] {
     color: var(--accent);
+    font-weight: 400;
     text-decoration: none;
 }
 abbr[title] {
