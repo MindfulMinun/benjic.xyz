@@ -1,5 +1,10 @@
-const { html } = require('./helpers.js')
+/*/
+import { html } from './helpers.js'
+export default function () {
+/*/
+const html = require('./helpers.js').html
 module.exports = function () {
+//*/
     return html`
 <footer class="footer">
     <div class="footer__ppal">
@@ -8,7 +13,8 @@ module.exports = function () {
                 <h3 class="sr-only">Footer</h3>
                 <a class="footer__img" href="/">
                     <span class="sr-only">Home</span>
-                    <img src="/static/images/pfp-2020.png" style="width: 100%; height: auto;" alt="">
+                    <img srcset="/static/images/pfp-2020.webp, /static/images/pfp-2020.png"
+                        src="/static/images/pfp-2020.png" alt="">
                 </a>
                 <div class="flex-grow">
                     <p>I’m supposed to be studying.</p>

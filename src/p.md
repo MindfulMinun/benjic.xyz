@@ -42,7 +42,7 @@ Also check out my developer profiles on [GitHub] and [Glitch].
         <div class="flex">
             <span class="flex-grow project-langs">
             {%- if project.langs -%}
-                {{ project.langs | join: ', ' }}
+                {{ project.langs | join(', ') }}
             {%- endif -%}
             </span>
             {%- if project.urls -%}

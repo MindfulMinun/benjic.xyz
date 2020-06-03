@@ -54,6 +54,10 @@ html, body {
     width: 120px;
     display: block;
 }
+.footer__img > img {
+    width: 100%;
+    height: auto;
+}
 
 /* Microcomponents */
 .sticky {

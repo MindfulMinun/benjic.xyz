@@ -10,13 +10,14 @@
  * @prop {string} [urls.source] A link to a live demo, will be labelled "Source"
  * @prop {string} [urls.view] A link to a live demo, will be labelled "View"
  */
+// export default function () {
 module.exports = function () {
     const out = {}
 
     // @ts-ignore
     out.url = process.env.NODE_ENV === 'production' ?
         'https://benjic.xyz' :
-        'http://localhost:1337';
+        'http://localhost:1337'
 
     out.twitter = {}
     out.twitter.handle = "@MindfulMinun"
@@ -33,7 +34,7 @@ module.exports = function () {
             }
         }, {
             name: "Lambda",
-            desc: "Bringing complex numbers, matrices, and more to JavaScript, in pursuit of making fully-fledged calculator.",
+            desc: "Bringing complex numbers, matrices, and more to JavaScript, in pursuit of making a fully-fledged calculator.",
             date: "2020-04-26",
             langs: ["JavaScript"],
             urls: {
@@ -67,7 +68,7 @@ module.exports = function () {
             }
         }, {
             name: "A text based game",
-            desc: "A port of a text-based game written by in Python by a friend.",
+            desc: "A port of a text-based game written in Python by a friend.",
             date: "2018-08-27",
             langs: ["CoffeeScript"],
             urls: {

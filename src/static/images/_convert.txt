@@ -1,0 +1,5 @@
+https://web.dev/codelab-serve-images-webp/
+
+cwebp -q 80 images/flower1.jpg -o images/flower1.webp
+
+`for file in dist/static/images/*; do cwebp -q 80 "$file" -o "${file%.*}.webp"; done`
