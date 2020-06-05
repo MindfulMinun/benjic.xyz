@@ -15,8 +15,7 @@
     config.addPassthroughCopy(`src/static/styles`)
 
     config.addPassthroughCopy({
-        'src/static/images/pfp-2020.png': '/favicon.png',
-        'src/netlify.toml': '/netlify.toml'
+        'src/static/images/pfp-2020.png': '/favicon.png'
     })
 
     return {

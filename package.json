@@ -10,7 +10,7 @@
   "private": true,
   "_type": "module",
   "scripts": {
-    "build::webp": "`for file in dist/static/images/*; do cwebp -q 80 \"$file\" -o \"${file%.*}.webp\"; done`",
+    "build::webp": "`for file in dist/static/images/*; do ./node_modules/cwebp-bin/vendor/cwebp -q 80 \"$file\" -o \"${file%.*}.webp\"; done`",
     "build": "rm -rf ./dist && npx @11ty/eleventy && npm run build::webp",
     "watch": "rm -rf ./dist && npx @11ty/eleventy --serve --port=1337",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
     "node": ">=8.0.0 <11.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "cwebp-bin": "^5.0.0"
   }
 }
