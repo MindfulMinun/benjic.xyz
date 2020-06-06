@@ -19,7 +19,7 @@ accent: "#448aff"
     <!-- OpenGraph -->
     <meta name="og:title"              content="{{ title }}">
     <meta name="twitter:title"         content="{{ title }}">
-    <meta name="og:url"                content="{{ b.url }}{{ page.url }}">
+    <meta name="og:url"                content="{{ page.url | addOrigin }}">
     {% if desc -%}
     <meta name="og:description"        content="{{ desc }}">
     <meta name="description"           content="{{ desc }}">
@@ -28,8 +28,8 @@ accent: "#448aff"
     <meta name="og:type"               content="website">
     {% if image -%}
     <!-- Image -->
-    <meta name="og:image"              content="{{ b.url }}{{ image.src }}">
-    <meta name="twitter:image"         content="{{ b.url }}{{ image.src }}">
+    <meta name="og:image"              content="{{ image.src | addOrigin }}">
+    <meta name="twitter:image"         content="{{ image.src | addOrigin }}">
     <meta name="og:image:alt"          content="{{ image.alt }}">
     <meta name="twitter:image:alt"     content="{{ image.alt }}">
     <meta name="twitter:card"          content="summary_large_image">

@@ -9,6 +9,11 @@
     config.addShortcode('image', require('./11ty-plugins/image'))
     config.addShortcode('footer', require('./11ty-plugins/footer'))
     
+    config.addFilter("addOrigin",
+        /** @param {string} path */
+        path => `https://benjic.xyz${path}`
+    )
+
     config.addPassthroughCopy(`src/static/images`)
     config.addPassthroughCopy(`src/static/other`)
     config.addPassthroughCopy(`src/static/scripts`)

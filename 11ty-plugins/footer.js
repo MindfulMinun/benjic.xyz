@@ -13,8 +13,14 @@ module.exports = function () {
                 <h3 class="sr-only">Footer</h3>
                 <a class="footer__img" href="/">
                     <span class="sr-only">Home</span>
-                    <img srcset="/static/images/pfp-2020.webp, /static/images/pfp-2020.png"
-                        src="/static/images/pfp-2020.png" alt="">
+                    <img srcset="
+                        /static/images/pfp-2020-tiny.webp 150w,
+                        /static/images/pfp-2020-tiny.png 150w,
+                        /static/images/pfp-2020-small.webp 300w,
+                        /static/images/pfp-2020-small.png 300w,
+                        /static/images/pfp-2020.webp 600w,
+                        /static/images/pfp-2020.png 600w
+                    " src="/static/images/pfp-2020.png" sizes="120px" alt="">
                 </a>
                 <div class="flex-grow">
                     <p>I’m supposed to be studying.</p>
@@ -33,15 +39,15 @@ module.exports = function () {
                             </a>
                         </li>
                         <li>
-                            <a href="https://keybase.io/mindfulminun">
-                                <span class="sr-only">Keybase</span>
-                                <span class="icon" style="--mask: url(/static/other/keybase.svg)"></span>
-                            </a>
-                        </li>
-                        <li>
                             <a href="https://www.instagram.com/mindfulminun/">
                                 <span class="sr-only">Instagram</span>
                                 <span class="icon" style="--mask: url(/static/other/instagram.svg)"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://keybase.io/mindfulminun">
+                                <span class="sr-only">Keybase</span>
+                                <span class="icon" style="--mask: url(/static/other/keybase.svg)"></span>
                             </a>
                         </li>
                     </ul>
@@ -51,7 +57,6 @@ module.exports = function () {
     </div>
     <div class="footer__ribbon">
         <div class="container" data-blobify>
-            <!-- <p>hello world</p> -->
             <p>Made with :3c by MindfulMinun</p>
         </div>
     </div>

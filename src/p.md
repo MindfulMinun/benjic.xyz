@@ -28,9 +28,9 @@ styles: |-
 
 # {{ title }}
 
-{{ desc }} This isn’t a complete portfolio.
+{{ desc }} Keep in mind that this ***isn’t*** a complete portfolio.
 
-Also check out my developer profiles on [GitHub] and [Glitch].
+Check out my developer profiles on [GitHub] and [Glitch].
 
 ---
 
@@ -47,7 +47,6 @@ Also check out my developer profiles on [GitHub] and [Glitch].
             </span>
             {%- if project.urls -%}
             <span class="links">
-
                 {%- if project.urls.github -%}
                     <a href="https://github.com/{{ project.urls.github }}">GitHub</a>
                     <span class="list-connective"> • </span>
