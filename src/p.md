@@ -5,17 +5,15 @@ layout: layouts/base
 styles: |-
     .project-list {
         display: grid;
+        align-items: center;
+        gap: 1em;
         grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
-    }
-    .project-list > li {
-        padding: .5em;
     }
     .project-list > li > strong {
         font-size: 1.5em;
     }
     .project-list > li > p {
-        margin: 0;
-        margin-bottom: .5em;
+        margin: 0 0 .5em;
     }
     .project-list > li > p {
         margin: 0;

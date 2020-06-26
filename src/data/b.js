@@ -21,7 +21,7 @@ module.exports = function () {
     out.projects = [
         {
             name: "game-of-life",
-            desc: "A JavaScript implementation of Conway's Game of Life, using Uint32Arrays to make sure it runs lightning-fast.",
+            desc: "A JavaScript implementation of Conway’s Game of Life, using Uint32Arrays to ensure it runs lightning-fast.",
             date: "2020-05-15",
             langs: ["JavaScript"],
             urls: {
@@ -29,7 +29,7 @@ module.exports = function () {
             }
         }, {
             name: "Lambda",
-            desc: "Bringing complex numbers, matrices, and more to JavaScript, in pursuit of making a fully-fledged calculator.",
+            desc: "Bringing complex numbers, matrices, and more to JavaScript.",
             date: "2020-04-26",
             langs: ["JavaScript"],
             urls: {
@@ -37,7 +37,7 @@ module.exports = function () {
             }
         }, {
             name: "d-flat",
-            desc: "Have you ever wondered what the derivative of a song would sound like?",
+            desc: "Have you ever wondered what the derivative of a song would sound like? (Spoiler alert: it’s like a high-pass filter)",
             date: "2020-05-19",
             langs: ["JavaScript"],
             urls: {

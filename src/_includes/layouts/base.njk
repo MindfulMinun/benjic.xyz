@@ -1,6 +1,6 @@
 ---
 lang: en-US
-accent: "#448aff"
+accent: "#5ad"
 ---
 <!doctype html>
 <!--
@@ -8,51 +8,58 @@ accent: "#448aff"
     localhost:1337
 -->
 <html lang="{{ lang }}">
-<head>
-    <meta charset="utf-8">
-    <title>{{ title }} • Benji</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="/favicon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="{{ accent }}">
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title>{{ title }} • Benji</title>
+        {% else %}
+        <title>Benji</title>
+        {% endif %}
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="/favicon.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="{{ accent }}">
 
-    <!-- OpenGraph -->
-    <meta name="og:title"              content="{{ title }}">
-    <meta name="twitter:title"         content="{{ title }}">
-    <meta name="og:url"                content="{{ page.url | addOrigin }}">
-    {% if desc -%}
-    <meta name="og:description"        content="{{ desc }}">
-    <meta name="description"           content="{{ desc }}">
-    <meta name="twitter:description"   content="{{ desc }}">
-    {%- endif %}
-    <meta name="og:type"               content="website">
-    {% if image -%}
-    <!-- Image -->
-    <meta name="og:image"              content="{{ image.src | addOrigin }}">
-    <meta name="twitter:image"         content="{{ image.src | addOrigin }}">
-    <meta name="og:image:alt"          content="{{ image.alt }}">
-    <meta name="twitter:image:alt"     content="{{ image.alt }}">
-    <meta name="twitter:card"          content="summary_large_image">
-    {%- endif %}
-    <meta name="twitter:site"          content="{{ b.twitter.handle }}">
-    <meta name="twitter:creator"       content="{{ b.twitter.handle }}">
-    <meta name="twitter:widgets:theme" content="dark">
-    <meta name="twitter:widgets:link-color"   content="{{ accent }}">
-    <meta name="twitter:widgets:border-color" content="{{ accent }}">
+        <!-- OpenGraph -->
+        {% if title -%}
+        <meta property="og:title"              content="{{ title }}">
+        <meta property="twitter:title"         content="{{ title }}">
+        <meta property="og:url"                content="{{ page.url | addOrigin }}">
+        {%- endif %}
+        {% if desc -%}
+        <meta property="og:description"        content="{{ desc }}">
+        <meta property="description"           content="{{ desc }}">
+        <meta property="twitter:description"   content="{{ desc }}">
+        {%- endif %}
+        <meta property="twitter:card"          content="summary">
+        {% if image -%}
+        <!-- Image -->
+        <meta property="og:image"              content="{{ image.src | addOrigin }}">
+        <meta property="og:image:alt"          content="{{ image.alt }}">
+        <meta property="twitter:image"         content="{{ image.src | addOrigin }}">
+        <meta property="twitter:image:alt"     content="{{ image.alt }}">
+        <meta property="twitter:card"          content="summary_large_image">
+        {%- endif %}
+        <meta property="twitter:site"          content="{{ b.twitter.handle }}">
+        <meta property="twitter:creator"       content="{{ b.twitter.handle }}">
+        <meta property="twitter:widgets:theme" content="dark">
+        <meta property="twitter:widgets:link-color"   content="{{ accent }}">
+        <meta property="twitter:widgets:border-color" content="{{ accent }}">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/static/styles/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Roboto:100,100i,300,300i,400,400i,500,500i|Roboto+Mono:300,300i,400,400i&display=swap">
-    <link rel="stylesheet" href="/static/styles/base.css">
-    {% if styles %}
-    <style>{{ styles | safe }}</style>
-    {% endif %}
-</head>
-<body class="flex flex--column">
-    <main class="container flex-grow">
-        {{ content | safe }}
-    </main>
-    {% footer %}
-    <script src="/static/scripts/main.js"></script>
-</body>
+        <!-- Styles -->
+        <link rel="stylesheet" href="/static/styles/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|IBM+Plex+Sans:100,100i,300,300i,400,400i,500,500i|Roboto+Mono:300,300i,400,400i&display=swap">
+        <link rel="stylesheet" href="/static/styles/base.css">
+        {% if styles %}
+        <style>{{ styles | safe }}</style>
+        {% endif %}
+    </head>
+    <body class="flex flex--column">
+        <main class="container flex-grow">
+            {{ content | safe }}
+        </main>
+        {% footer %}
+        <script src="/static/scripts/main.js"></script>
+    </body>
 </html>

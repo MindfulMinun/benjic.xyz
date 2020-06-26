@@ -3,13 +3,13 @@
     --on-background: #fafafa;
     --secondary: rgba(255 255 255 / .52);
     --outline: rgba(255 255 255 / .25);
-    --accent: #448aff;
+    /* --accent: #448aff; */
+    --accent: #5ad;
 }
 
 html, body {
-    /* font-family: Roboto, Arial, sans-serif; */
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    /* font-family: "Inter", "Roboto", Helvetica, Arial, sans-serif; */
+    font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     background-color: var(--background);
     color: var(--on-background);
@@ -27,6 +27,7 @@ html, body {
 
 /* Layout */
 .footer {
+    margin-top: 1em;
     background-color: #393939;
     display: block;
 }
@@ -44,7 +45,7 @@ html, body {
     display: flex;
     flex-flow: row wrap;
     --icon-size: 1.5em;
-    margin: 0 -.5em;
+    margin: 1em -.5em 0;
 }
 .footer__ppal ul.a11y a {
     display: block;
@@ -54,18 +55,18 @@ html, body {
     width: 120px;
     display: block;
 }
-.footer__img > img {
+.footer__img img {
     width: 100%;
     height: auto;
 }
 
 /* Microcomponents */
 .sticky {
-    margin: 1em -1em;
+    margin: 1em -1em 0;
     display: block;
 }
 .sticky__label {
-    margin: .5em 1em;
+    margin: .5em 1em 0;
     color: var(--secondary);
     font-style: italic;
 }
@@ -73,10 +74,10 @@ html, body {
 .ratiod {
     height: 0;
     overflow: hidden;
-    padding-top: calc(100% / (var(--ratio)));
+    padding-top: calc(100% / var(--ratio));
     position: relative;
 }
-.ratiod > * {
+.ratiod .ratiod__target {
     position: absolute;
     top: 0;
     left: 0;
@@ -93,14 +94,23 @@ html, body {
     display: block;
 }
 
+.gradient-text {
+    /* I must be an inline element (apply this class to em, strong, or span */
+    background-image: linear-gradient(90deg, #448aff 0%, #00e676 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
 
 @media only screen and (min-width: 560px) {
     .sticky {
-        margin: 1em auto;
+        margin: 1em auto 0;
         max-width: 480px;
     }
     .sticky__label {
-        margin: .5em 0;
+        margin: .5em 0 0;
     }
 }
 @media only screen and (min-width: 640px) {

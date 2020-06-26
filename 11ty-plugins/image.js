@@ -12,23 +12,24 @@
  * @param {string} [out.sizes] List of sizes for the image
  * @param {string} out.src The default source, if srcset isn't supported
  * @param {string} [out.ratio] The image's aspect ratio
+ * @param {string} [out.id] The labels id, not the image's
  * @param {string} [out.style] Any styles to add to the image box
  */
 // export default function (out) {
 module.exports = function (out) {
-    const { alt, srcset, src, ratio, style, sizes } = out
-    const id = randomId()
+    let { alt, srcset, src, ratio, style, sizes, id } = out
+    id = id || randomId()
     let styleAttribute = `--ratio: ${+ratio || 1};`
     styleAttribute += style || ''
 
     return html`<div class="sticky">
         <div class="ratiod" style="${styleAttribute}">
-            <img src="${src}" ${
+            <img class="ratiod__target" src="${src}" ${
                 srcset ? `srcset="${srcset.replace(/\n\s*/g, '')}"` : ''
             } ${
                 sizes ? `sizes="${sizes.replace(/\n\s*/g, '')}"` : ''
             } aria-labelledby="${id}">
         </div>
-        <p class="sticky__label" id="${id}">${alt}</p>
+        <p class="sticky__label" id="${id || randomId()}">${alt}</p>
     </div>`
 }
