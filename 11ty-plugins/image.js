@@ -22,14 +22,18 @@ module.exports = function (out) {
     let styleAttribute = `--ratio: ${+ratio || 1};`
     styleAttribute += style || ''
 
-    return html`<div class="sticky">
-        <div class="ratiod" style="${styleAttribute}">
-            <img class="ratiod__target" src="${src}" ${
-                srcset ? `srcset="${srcset.replace(/\n\s*/g, '')}"` : ''
-            } ${
-                sizes ? `sizes="${sizes.replace(/\n\s*/g, '')}"` : ''
-            } aria-labelledby="${id}">
+    return html`<figure id="${id}">
+        <div class="sticky">
+            <div class="ratiod" style="${styleAttribute}">
+                <img class="ratiod__target" src="${src}" ${
+                    srcset ? `srcset="${srcset.replace(/\n\s*/g, '')}"` : ''
+                } ${
+                    sizes ? `sizes="${sizes.replace(/\n\s*/g, '')}"` : ''
+                } aria-labelledby="${id}-label">
+            </div>
+            <figcaption>
+                <p class="sticky__label" id="${id}-label">${alt}</p>
+            </figcaption>
         </div>
-        <p class="sticky__label" id="${id || randomId()}">${alt}</p>
-    </div>`
+    </figure>`
 }

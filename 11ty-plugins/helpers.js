@@ -12,7 +12,7 @@ const XSS_ESCAPES = {
 /**
  * Template tag to join stuff together
  * @param {TemplateStringsArray} strings The unchanging parts of the string
- * @param {...any} [exprs] The expressions within it
+ * @param {*[]} exprs The expressions within it
  * @returns {string} The joint string
  * @public
  * @author MindfulMinun

@@ -1,13 +1,25 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-*:focus {
+:focus {
     outline: white dashed 1px;
     outline-offset: .125em;
     outline-style: dashed;
     outline-width: 1px;
     outline-color: white;
 }
+
+:target {
+    animation: 1000ms look-at-me linear;
+}
+@keyframes look-at-me {
+    0% { background-color: transparent; }
+    15% { background-color: highlight; }
+    30% { background-color: transparent; }
+    45% { background-color: highlight; }
+    100% { background-color: transparent; }
+}
+
 html {
     line-height: 1.15; 
     -webkit-text-size-adjust: 100%; 
@@ -34,7 +46,7 @@ pre {
     font-size: 1em; 
 }
 a { background-color: transparent; }
-a[href] {
+[href] {
     color: var(--accent);
     font-weight: 400;
     text-decoration: none;

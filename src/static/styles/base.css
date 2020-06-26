@@ -94,8 +94,14 @@ html, body {
     display: block;
 }
 
-.gradient-text {
-    /* I must be an inline element (apply this class to em, strong, or span */
+.callout-text {
+    /* I must be an inline element (apply this class to em, strong, or span) */
+    font-size: 112.5%;
+    font-weight: 600;
+    letter-spacing: .02em;
+    position: relative;
+    padding: 0 .1em;
+    top: .02em;
     background-image: linear-gradient(90deg, #448aff 0%, #00e676 100%);
     background-size: cover;
     -webkit-background-clip: text;
