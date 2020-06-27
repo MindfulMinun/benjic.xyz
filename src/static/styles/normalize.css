@@ -10,6 +10,7 @@
 }
 
 :target {
+    scroll-margin-top: 3rem;
     animation: 1000ms look-at-me linear;
 }
 @keyframes look-at-me {
@@ -24,7 +25,7 @@ html {
     line-height: 1.15; 
     -webkit-text-size-adjust: 100%; 
 }
-body { margin: 0; }
+body, figure { margin: 0; }
 main { display: block; }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
@@ -61,15 +62,21 @@ code, kbd, samp {
     font-family: monospace, monospace; 
     font-size: 1em; 
 }
-small { font-size: 80%; }
-sub, sup {
-    font-size: 75%;
-    line-height: 0;
+small {
+    font-size: 87.5%;
+    font-feature-settings: "subs";
+    position: relative;
+    bottom: .3em;
+    padding: 0 2px;
+}
+sup, sub {
+    font-size: 100%;
+    line-height: inherit;
     position: relative;
     vertical-align: baseline;
 }
-sub { bottom: -0.25em; }
-sup { top: -0.5em; }
+sup { font-feature-settings: "sups"; }
+sub { font-feature-settings: "subs"; }
 img {
     border-style: none;
     display: block;
@@ -123,6 +130,14 @@ summary { display: list-item; }
 template { display: none; }
 [hidden] { display: none; }
 
+/* Twemoji */
+img.emoji {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+ }
 
 /* Helpers */
 .visuallyhidden, .sr-only {

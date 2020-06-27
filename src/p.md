@@ -24,7 +24,7 @@ styles: |-
     .list-connective:last-child { display: none; }
 ---
 
-# {{ title }}
+# {{ title }} 🛠
 
 {{ desc }} Keep in mind that this ***isn’t*** a complete portfolio.
 

@@ -8,6 +8,7 @@
     // config.addShortcode('footer', await import('./11ty-plugins/footer'))
     config.addShortcode('image', require('./11ty-plugins/image'))
     config.addShortcode('footer', require('./11ty-plugins/footer'))
+    config.addFilter('twemoji', require('./11ty-plugins/twemoji'))
     
     config.addFilter("addOrigin",
         /** @param {string} path */
