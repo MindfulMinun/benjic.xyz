@@ -21,19 +21,12 @@ module.exports = function () {
     out.projects = [
         {
             name: "game-of-life",
-            desc: "A JavaScript implementation of Conway’s Game of Life, using Uint32Arrays to ensure it runs lightning-fast.",
+            desc: "A JavaScript implementation of Conway’s Game of Life, using BigUint64Arrays to ensure it runs lightning-fast.",
             date: "2020-05-15",
             langs: ["JavaScript"],
             urls: {
+                glitch: "https://mm-game-of-life.glitch.me/",
                 github: "MindfulMinun/game-of-life"
-            }
-        }, {
-            name: "Lambda",
-            desc: "Bringing complex numbers, matrices, and more to JavaScript.",
-            date: "2020-04-26",
-            langs: ["JavaScript"],
-            urls: {
-                github: "MindfulMinun/Lambda"
             }
         }, {
             name: "d-flat",
@@ -45,8 +38,16 @@ module.exports = function () {
                 glitch: "https://mm-d-flat.glitch.me/"
             }
         }, {
+            name: "Lambda",
+            desc: "Bringing complex numbers, matrices, and more to JavaScript.",
+            date: "2020-04-26",
+            langs: ["JavaScript"],
+            urls: {
+                github: "MindfulMinun/Lambda"
+            }
+        }, {
             name: "yt-for-me",
-            desc: "Steals videos from YouTube, how fun! One of my larger projects.",
+            desc: "Steals videos from YouTube, how fun! (this only works like half the time, but that's ok because it's just a side project)",
             date: "2019-10-18",
             langs: ["JavaScript"],
             urls: {

@@ -28,7 +28,7 @@ styles: |-
 
 {{ desc }} Keep in mind that this ***isn’t*** a complete portfolio.
 
-Check out my developer profiles on [GitHub] and [Glitch].
+Check out my developer profiles on [GitHub] and [Glitch], or my professional profile on [LinkedIn].
 
 ---
 
@@ -69,3 +69,4 @@ Check out my developer profiles on [GitHub] and [Glitch].
 
 [GitHub]: https://github.com/MindfulMinun
 [Glitch]: https://glitch.com/@MindfulMinun
+[LinkedIn]: https://www.linkedin.com/in/benji-cerda/

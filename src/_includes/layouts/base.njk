@@ -55,6 +55,7 @@ accent: "#5ad"
         {% if styles %}
         <style>{{ styles | safe }}</style>
         {% endif %}
+        {% if after_head %}{{ after_head | safe }}{% endif %}
     </head>
     <body class="flex flex--column">
         <main class="container flex-grow">

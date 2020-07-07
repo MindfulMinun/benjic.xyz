@@ -21,21 +21,31 @@ In my free time, I like to write JavaScript. Check out some of the <a href="/p/"
 {% image
     alt="This is me.",
     srcset="
-        /static/images/retrato-1-1-tiny.webp 612w,
-        /static/images/retrato-1-1-tiny.jpeg 612w,
-        /static/images/retrato-1-1-small.webp 1224w,
-        /static/images/retrato-1-1-small.jpeg 1224w,
-        /static/images/retrato-1-1.webp 2448w,
-        /static/images/retrato-1-1.jpeg 2448w
+        /static/images/retrato-1-1@1x.webp 612w,
+        /static/images/retrato-1-1@1x.jpeg 612w,
+        /static/images/retrato-1-1@2x.webp 1224w,
+        /static/images/retrato-1-1@2x.jpeg 1224w,
+        /static/images/retrato-1-1@4x.webp 2448w,
+        /static/images/retrato-1-1@4x.jpeg 2448w
     ",
-    src="/static/images/retrato-1-1.jpeg",
-    sizes="(min-width: 560px) 480px, 100vw",
+    src="/static/images/retrato-1-1@2x.jpeg",
     ratio="1",
     id="me",
-    style="background: #306bad;"
+    style="background: #306bad;",
+    size="small"
 %}
 
 I love to code. It’s my dream to write code for a living. I picked up JavaScript during my freshman year of high school while messing around with Firefox Scratchpad. I naturally went on to learn the other two web languages, HTML and CSS. After 5 years, I’ve become fluent in front-end workflow, combining technologies ranging from client-side ServiceWorker to back-end Heroku, you name it.
+
+
+<!-- <div class="sticky">
+    <div class="ratiod" style="--ratio: 1.7777777777777777;background: #000;">
+        <xyz-player class="ratiod__target" tabindex="0" controls>
+            <source src="https://mindfulminun.keybase.pub/xyz/goodbye.webm" type="video/webm">
+            <source src="https://mindfulminun.keybase.pub/xyz/goodbye.mp4" type="video/mp4">
+        </xyz-player>
+    </div>
+</div> -->
 
 <section id="contact">
 

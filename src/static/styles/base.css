@@ -78,6 +78,7 @@ html, body {
     overflow: hidden;
     padding-top: calc(100% / var(--ratio));
     position: relative;
+    background-color: #000;
 }
 .ratiod .ratiod__target {
     position: absolute;
@@ -113,7 +114,7 @@ html, body {
 }
 
 @media only screen and (min-width: 560px) {
-    .sticky {
+    .sticky.sticky--small {
         margin: 1em auto 0;
         max-width: 480px;
     }
@@ -122,11 +123,19 @@ html, body {
     }
 }
 @media only screen and (min-width: 640px) {
+    .sticky.sticky--medium {
+        margin: 1em auto 0;
+        max-width: 640px;
+    }
     .container {
         max-width: 640px;
     }
 }
 @media only screen and (min-width: 840px) {
+    .sticky.sticky--large {
+        margin: 1em auto 0;
+        max-width: 840px;
+    }
     main {
         margin-top: 1em;
     }

@@ -14,13 +14,11 @@ module.exports = function () {
                 <a class="footer__img" href="/">
                     <span class="sr-only">Home</span>
                     <img srcset="
-                        /static/images/pfp-2020-tiny.webp 150w,
-                        /static/images/pfp-2020-tiny.png 150w,
-                        /static/images/pfp-2020-small.webp 300w,
-                        /static/images/pfp-2020-small.png 300w,
-                        /static/images/pfp-2020.webp 600w,
-                        /static/images/pfp-2020.png 600w
-                    " src="/static/images/pfp-2020.png" sizes="120px" alt="">
+                        /static/images/pfp-2020@1x.webp 300w,
+                        /static/images/pfp-2020@1x.png 300w,
+                        /static/images/pfp-2020@2x.webp 600w,
+                        /static/images/pfp-2020@2x.png 600w,
+                    " src="/static/images/pfp-2020@2x.png" sizes="120px" alt="">
                 </a>
                 <div class="flex-grow">
                     <p>I’m supposed to be studying.</p>

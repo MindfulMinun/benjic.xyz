@@ -77,9 +77,11 @@ sup, sub {
 }
 sup { font-feature-settings: "sups"; }
 sub { font-feature-settings: "subs"; }
-img {
+img, video, audio {
     border-style: none;
     display: block;
+    width: 100%;
+    height: auto;
 }
 button, input, optgroup, select, textarea {
     font-family: inherit; 
