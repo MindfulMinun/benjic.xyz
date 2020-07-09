@@ -17,10 +17,11 @@ accent: "#5ad"
         {% endif %}
         
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" href="/favicon.png">
+        <link rel="icon" href="/static/images/pfp-2020@1x.png">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="theme-color" content="{{ accent }}">
 
+        {% if not noindex %}
         <!-- OpenGraph -->
         {% if title -%}
         <meta property="og:title"              content="{{ title }}">
@@ -28,8 +29,8 @@ accent: "#5ad"
         <meta property="og:url"                content="{{ page.url | addOrigin }}">
         {%- endif %}
         {% if desc -%}
+        <meta name="description"               content="{{ desc }}">
         <meta property="og:description"        content="{{ desc }}">
-        <meta property="description"           content="{{ desc }}">
         <meta property="twitter:description"   content="{{ desc }}">
         {%- endif %}
         <meta property="twitter:card"          content="summary">
@@ -46,10 +47,11 @@ accent: "#5ad"
         <meta property="twitter:widgets:theme" content="dark">
         <meta property="twitter:widgets:link-color"   content="{{ accent }}">
         <meta property="twitter:widgets:border-color" content="{{ accent }}">
+        {% endif %}
+
 
         <!-- Styles -->
         <link rel="stylesheet" href="/static/styles/normalize.css">
-        {# <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Inter:100,100i,300,300i,400,400i,500,500i|Roboto+Mono:300,300i,400,400i&display=swap"> #}
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="stylesheet" href="/static/styles/base.css">
         {% if styles %}

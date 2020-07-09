@@ -47,7 +47,7 @@ module.exports = function () {
             }
         }, {
             name: "yt-for-me",
-            desc: "Steals videos from YouTube, how fun! (this only works like half the time, but that's ok because it's just a side project)",
+            desc: "Steals videos from YouTube, how fun!",
             date: "2019-10-18",
             langs: ["JavaScript"],
             urls: {

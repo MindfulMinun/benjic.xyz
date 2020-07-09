@@ -13,7 +13,7 @@ I’m supposed to be studying.
 
 ---
 
-Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] late last spring with an associate’s degree. I’m currently a first-year at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science. I like to [write&nbsp;code](/p/) and play the piano.
+Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] late last spring with an associate’s degree. I’m currently studying at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science. I like to [write&nbsp;code](/p/) and play the piano.
 
 
 In my free time, I like to write JavaScript. Check out some of the <a href="/p/" class="callout-text">things&nbsp;I’ve&nbsp;made</a>, I promise you they’re *(kinda)* cool. 
@@ -35,17 +35,7 @@ In my free time, I like to write JavaScript. Check out some of the <a href="/p/"
     size="small"
 %}
 
-I love to code. It’s my dream to write code for a living. I picked up JavaScript during my freshman year of high school while messing around with Firefox Scratchpad. I naturally went on to learn the other two web languages, HTML and CSS. After 5 years, I’ve become fluent in front-end workflow, combining technologies ranging from client-side ServiceWorker to back-end Heroku, you name it.
-
-
-<!-- <div class="sticky">
-    <div class="ratiod" style="--ratio: 1.7777777777777777;background: #000;">
-        <xyz-player class="ratiod__target" tabindex="0" controls>
-            <source src="https://mindfulminun.keybase.pub/xyz/goodbye.webm" type="video/webm">
-            <source src="https://mindfulminun.keybase.pub/xyz/goodbye.mp4" type="video/mp4">
-        </xyz-player>
-    </div>
-</div> -->
+I love to code. It’s my dream to write code for a living. I picked up JavaScript during my freshman year of high school while messing around with Firefox Scratchpad. I naturally went on to learn the other two web languages, HTML and CSS. After 5 years, I’ve become fluent in front-end workflow, combining technologies ranging from CI with Heroku and Netlify, GitHub Actions, integration with Visual Studio Code, backends in Node.js with Express, you name it.
 
 <section id="contact">
 
