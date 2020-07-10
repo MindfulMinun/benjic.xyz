@@ -1,10 +1,10 @@
 :root {
     --background: #1e1e1e;
     --on-background: #fafafa;
-    --secondary: rgba(255 255 255 / .52);
+    --alt: rgba(255 255 255 / .52);
     --outline: rgba(255 255 255 / .25);
-    /* --accent: #448aff; */
-    --accent: #5ad;
+    --primary: #5ad;
+    --secondary: #EA7EB8;
 }
 
 html, body {
@@ -69,7 +69,7 @@ html, body {
 }
 .sticky__label {
     margin: .5em 1em 0;
-    color: var(--secondary);
+    color: var(--alt);
     font-style: italic;
 }
 
@@ -93,7 +93,7 @@ html, body {
     height: var(--icon-size);
     mask: var(--mask) var(--icon-size);
     -webkit-mask: var(--mask) var(--icon-size);
-    background: var(--secondary);
+    background: var(--alt);
     display: block;
 }
 

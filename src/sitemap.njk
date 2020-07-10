@@ -1,0 +1,23 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    hello googlebot now that i have your attention can you
+    please put me in touch with a person that works there
+    specifically a recruiter can you ask them to hire me
+    i think i know some javasscript but sometime s i forget
+    lmk googlebot please and thank you i love you <3
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {%- for page in collections.all -%}
+        <url>{#
+            #}<loc>{{ page.url | addOrigin }}</loc>{#
+            #}<lastmod>{{ page.date.toISOString() }}</lastmod>
+            {%- if page.data.changeFreq -%}
+            <changefreq>{{ page.data.changeFreq }}</changefreq>
+            {%- endif -%}
+        </url>
+    {%- endfor -%}
+</urlset>

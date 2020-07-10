@@ -10,18 +10,18 @@ accent: "#5ad"
 <html lang="{{ lang }}">
     <head>
         <meta charset="utf-8">
-        {% if title %}
+        {% if title -%}
         <title>{{ title }} • Benji</title>
         {% else %}
         <title>Benji</title>
-        {% endif %}
+        {%- endif -%}
         
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="icon" href="/static/images/pfp-2020@1x.png">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="theme-color" content="{{ accent }}">
 
-        {% if not noindex %}
+        {% if not eleventyExcludeFromCollections -%}
         <!-- OpenGraph -->
         {% if title -%}
         <meta property="og:title"              content="{{ title }}">
@@ -42,23 +42,33 @@ accent: "#5ad"
         <meta property="twitter:image:alt"     content="{{ image.alt }}">
         <meta property="twitter:card"          content="summary_large_image">
         {%- endif %}
+        <meta property="og:type"               content="website">
         <meta property="twitter:site"          content="{{ b.twitter.handle }}">
         <meta property="twitter:creator"       content="{{ b.twitter.handle }}">
         <meta property="twitter:widgets:theme" content="dark">
         <meta property="twitter:widgets:link-color"   content="{{ accent }}">
         <meta property="twitter:widgets:border-color" content="{{ accent }}">
-        {% endif %}
-
+        {% else %}
+        <meta name="robots" content="noindex">
+        {%- endif %}
 
         <!-- Styles -->
         <link rel="stylesheet" href="/static/styles/normalize.css">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="stylesheet" href="/static/styles/base.css">
-        {% if styles %}
+        {% if styles -%}
         <style>{{ styles | safe }}</style>
-        {% endif %}
-        {% if after_head %}{{ after_head | safe }}{% endif %}
+        {%- endif %}
+        {%- if after_head %}{{ after_head | safe }}{% endif -%}
     </head>
+<!--
+           .
+          ":"
+        ___:____     |"\/"|    whale hello there
+      ,'        `.    \  /     what are you doing here
+      |  O        \___/  |
+    ~^~^~^~^~^~^~^~^~^~^~^~^~
+-->
     <body class="flex flex--column">
         <main class="container flex-grow">
             {{ content | twemoji | safe }}

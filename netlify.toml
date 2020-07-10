@@ -6,3 +6,8 @@
     from = "/p/a-text-based-game/"
     to = "https://mm-text.glitch.me/?ref=xyz-redir"
     status = 301
+
+[[redirects]]
+    from = "/*"
+    to = "/404/"
+    status = 404

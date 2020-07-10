@@ -48,7 +48,7 @@ pre {
 }
 a { background-color: transparent; }
 [href] {
-    color: var(--accent);
+    color: var(--primary);
     font-weight: 400;
     text-decoration: none;
 }
