@@ -1,15 +1,21 @@
+# benjic.xyz
+Repository for [benjic.xyz], made with [Eleventy] and hosted on [Netlify].
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d12fbbdf-4893-473d-a259-d6510cd37741/deploy-status)](https://app.netlify.com/sites/benjic-xyz/deploys)
+
 ## Attributions
 
 This [JAMstack] site wouldn’t have been possible without a variety of open-sourced tools and components:
 
-- [Eleventy], a static site generater licensed under the [MIT License]
+- [Eleventy], a static site generator licensed under the [MIT License]
 - [Inter], a typeface designed for screens licensed under [OFL-1.1]
 - [Twemoji], open source emoji
     - Code licensed under the [MIT License]
     - Graphics licensed under [CC BY 4.0]
 - Avatar made with [@lullindo’s icon maker on Picrew](https://picrew.me/image_maker/137904)
 
-
+[benjic.xyz]: https://benjic.xyz
+[Netlify]: https://www.netlify.com/
 [JAMstack]: https://jamstack.org/
 [Eleventy]: https://www.11ty.dev/
 [Inter]: https://rsms.me/inter/
