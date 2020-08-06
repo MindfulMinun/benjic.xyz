@@ -1,8 +1,5 @@
-/*
-    export default async function (config) {
-/*/
-    module.exports = function (config) {
-//*/
+// @ts-nocheck -- 11ty has no type documentation
+module.exports = function (config) {
 
     // config.addShortcode('image', await import('./11ty-plugins/image'))
     // config.addShortcode('footer', await import('./11ty-plugins/footer'))
@@ -10,15 +7,9 @@
     config.addShortcode('footer', require('./11ty-plugins/footer'))
     config.addFilter('twemoji', require('./11ty-plugins/twemoji'))
     
-    config.addFilter("addOrigin",
-        /** @param {string} path */
-        path => `https://benjic.xyz${path}`
-    )
+    config.addFilter("addOrigin", path => `https://benjic.xyz${path}`)
 
-    config.addPassthroughCopy(`src/static/images`)
-    config.addPassthroughCopy(`src/static/other`)
-    config.addPassthroughCopy(`src/static/scripts`)
-    config.addPassthroughCopy(`src/static/styles`)
+    config.addPassthroughCopy(`src/static`)
 
     config.addPassthroughCopy({
         'src/static/images/pfp-2020.png': '/favicon.png'

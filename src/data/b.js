@@ -20,13 +20,12 @@ module.exports = function () {
     /** @type {MindfulProject[]} */
     out.projects = [
         {
-            name: "game-of-life",
-            desc: "A JavaScript implementation of Conway’s Game of Life, using BigUint64Arrays to ensure it runs lightning-fast.",
-            date: "2020-05-15",
+            name: "shawty",
+            desc: "A link shortener written in Deno",
+            date: "2020-07-28",
             langs: ["JavaScript"],
             urls: {
-                glitch: "https://mm-game-of-life.glitch.me/",
-                github: "MindfulMinun/game-of-life"
+                github: "MindfulMinun/shawty"
             }
         }, {
             name: "d-flat",
@@ -34,8 +33,17 @@ module.exports = function () {
             date: "2020-05-19",
             langs: ["JavaScript"],
             urls: {
-                github: "MindfulMinun/d-flat",
-                glitch: "https://mm-d-flat.glitch.me/"
+                glitch: "mm-d-flat",
+                github: "MindfulMinun/d-flat"
+            }
+        }, {
+            name: "game-of-life",
+            desc: "A JavaScript implementation of Conway’s Game of Life, using BigUint64Arrays to ensure it runs lightning-fast.",
+            date: "2020-05-15",
+            langs: ["JavaScript"],
+            urls: {
+                glitch: "mm-game-of-life",
+                github: "MindfulMinun/game-of-life"
             }
         }, {
             name: "Lambda",
@@ -68,7 +76,7 @@ module.exports = function () {
             date: "2018-08-27",
             langs: ["CoffeeScript"],
             urls: {
-                glitch: "https://mm-text.glitch.me/"
+                glitch: "mm-text"
             }
         }
     ]

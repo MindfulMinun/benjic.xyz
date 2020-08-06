@@ -54,7 +54,7 @@ Check out my developer profiles on [GitHub] and [Glitch], or my professional pro
                     <span class="list-connective"> • </span>
                 {%- endif -%}
                 {%- if project.urls.glitch -%}
-                    <a href="{{ project.urls.glitch }}">View live on Glitch</a>
+                    <a href="https://{{ project.urls.glitch }}.glitch.me/">View live on Glitch</a>
                     <span class="list-connective"> • </span>
                 {%- endif -%}
                 {%- if project.urls.view -%}

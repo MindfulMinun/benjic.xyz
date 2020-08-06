@@ -17,8 +17,8 @@ module.exports = function () {
                         /static/images/pfp-2020@1x.webp 300w,
                         /static/images/pfp-2020@1x.png 300w,
                         /static/images/pfp-2020@2x.webp 600w,
-                        /static/images/pfp-2020@2x.png 600w,
-                    " src="/static/images/pfp-2020@2x.png" sizes="120px" alt="">
+                        /static/images/pfp-2020@2x.png 600w
+                    " src="/static/images/pfp-2020@2x.png" sizes="120px" alt="" loading="lazy">
                 </a>
                 <div class="flex-grow">
                     <p>I’m supposed to be studying.</p>

@@ -1,8 +1,11 @@
 node_modules/
 dist/
+lazy/
 
 # Local Netlify folder
 .netlify/
 
 # Ignore drafts
 **.draft.**
+
+.DS_Store

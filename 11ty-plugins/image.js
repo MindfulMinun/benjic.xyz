@@ -1,8 +1,4 @@
-/*/
-    import { randomId, html } from './helpers'
-/*/
-    const { randomId, html } = require('./helpers')
-//*/
+const { randomId, html } = require('./helpers.js')
 
 const MEDIA_SIZES = {
     small: '(min-width: 560px) 480px, 100vw',

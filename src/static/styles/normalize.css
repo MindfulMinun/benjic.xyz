@@ -15,9 +15,9 @@
 }
 @keyframes look-at-me {
     0% { background-color: transparent; }
-    15% { background-color: highlight; }
-    30% { background-color: transparent; }
-    45% { background-color: highlight; }
+    10% { background-color: highlight; }
+    20% { background-color: transparent; }
+    30% { background-color: highlight; }
     100% { background-color: transparent; }
 }
 
