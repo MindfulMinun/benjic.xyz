@@ -47,10 +47,11 @@ I love to code. It’s my dream to write code for a living. I picked up JavaScri
 
 ## Contact
 
-You can find me all over the Internet as [MindfulMinun][Twitter], I can [prove it][Keybase]. Get in touch with me via [Twitter] or [Discord]. I’m also on [GitHub], [Glitch], [Keybase], [Mastodon], [LinkedIn] and many other places. Feel free to say hi!
+You can find me all over the Internet as [MindfulMinun][Twitter], I can [prove it][Keybase]. Get in touch with me via old-fashioned [email], or through socials like [Twitter] or [Discord]. I’m also on [GitHub], [Glitch], [Keybase], [Mastodon], [LinkedIn] and many other places. Feel free to say hi!
 
 </section>
 
+[email]: mailto:benji@benjic.xyz
 [Twitter]: https://twitter.com/MindfulMinun
 [GitHub]: https://github.com/MindfulMinun
 [Glitch]: https://glitch.com/@MindfulMinun
