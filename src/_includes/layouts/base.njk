@@ -21,6 +21,9 @@ accent: "#5ad"
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="theme-color" content="{{ accent }}">
 
+        <!-- IndieWeb -->
+        <link rel="pgpkey" href="https://keybase.io/mindfulminun/pgp_keys.asc">
+
         {% if not eleventyExcludeFromCollections -%}
         <!-- OpenGraph -->
         {% if title -%}
@@ -73,7 +76,7 @@ accent: "#5ad"
         <main class="container flex-grow">
             {{ content | twemoji | safe }}
         </main>
-        {% footer %}
+        {% include '../partials/footer.njk' %}
         <script src="/static/scripts/main.js"></script>
     </body>
 </html>

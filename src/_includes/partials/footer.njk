@@ -1,17 +1,9 @@
-/*/
-import { html } from './helpers.js'
-export default function () {
-/*/
-const html = require('./helpers.js').html
-module.exports = function () {
-//*/
-    return html`
 <footer class="footer">
     <div class="footer__ppal">
         <div class="container">
             <div class="flex">
                 <h3 class="sr-only">Footer</h3>
-                <a class="footer__img" href="/">
+                <a class="footer__img" href="/" rel="me">
                     <span class="sr-only">Home</span>
                     <img srcset="
                         /static/images/pfp-2020@1x.webp 300w,
@@ -25,25 +17,25 @@ module.exports = function () {
                     <h4 class="sr-only">Social links</h4>
                     <ul class="a11y">
                         <li>
-                            <a href="https://github.com/MindfulMinun/">
+                            <a href="https://github.com/MindfulMinun/" rel="me">
                                 <span class="sr-only">GitHub</span>
                                 <span class="icon" style="--mask: url(/static/other/github.svg)"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/MindfulMinun">
+                            <a href="https://twitter.com/MindfulMinun" rel="me">
                                 <span class="sr-only">Twitter</span>
                                 <span class="icon" style="--mask: url(/static/other/twitter.svg)"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/mindfulminun/">
+                            <a href="https://www.instagram.com/mindfulminun/" rel="me">
                                 <span class="sr-only">Instagram</span>
                                 <span class="icon" style="--mask: url(/static/other/instagram.svg)"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://keybase.io/mindfulminun">
+                            <a href="https://keybase.io/mindfulminun" rel="me">
                                 <span class="sr-only">Keybase</span>
                                 <span class="icon" style="--mask: url(/static/other/keybase.svg)"></span>
                             </a>
@@ -58,5 +50,4 @@ module.exports = function () {
             <p>Made with :3c by MindfulMinun</p>
         </div>
     </div>
-</footer>`.replace(/\n\s*/g, '')
-}
+</footer>
