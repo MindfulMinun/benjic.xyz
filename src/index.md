@@ -3,7 +3,7 @@ title: About me
 desc: Hi, I’m Benji. I’m supposed to be studying.
 layout: layouts/base
 image:
-    src: "/static/images/retrato-1-1.jpeg"
+    src: "/static/images/retrato-1-1@4x.jpeg"
     alt: Benji
 ---
 
@@ -56,7 +56,7 @@ You can find me all over the Internet as [MindfulMinun][Twitter], I can [prove i
 [GitHub]: https://github.com/MindfulMinun
 [Glitch]: https://glitch.com/@MindfulMinun
 [Keybase]: https://keybase.io/mindfulminun
-[Discord]: http://discord.com/users/182536071064715264
+[Discord]: https://discord.com/users/182536071064715264
 [Mastodon]: https://mastodon.social/@mindfulminun
 [LinkedIn]: https://www.linkedin.com/in/benji-cerda/
 [templejc]: https://templejc.edu

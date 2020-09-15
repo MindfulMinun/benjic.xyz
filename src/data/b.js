@@ -20,12 +20,13 @@ module.exports = function () {
     /** @type {MindfulProject[]} */
     out.projects = [
         {
-            name: "shawty",
-            desc: "A link shortener written in Deno",
-            date: "2020-07-28",
+            name: "Sakura",
+            desc: "Give your photos a 🌸 pink manga aesthetic 🌸 by adding a pink filter to it.",
+            date: "2020-09-11",
             langs: ["JavaScript"],
             urls: {
-                github: "MindfulMinun/shawty"
+                glitch: "mm-sakura",
+                github: "MindfulMinun/sakura"
             }
         }, {
             name: "d-flat",
@@ -35,6 +36,14 @@ module.exports = function () {
             urls: {
                 glitch: "mm-d-flat",
                 github: "MindfulMinun/d-flat"
+            }
+        }, {
+            name: "shawty",
+            desc: "A link shortener written in Deno",
+            date: "2020-07-28",
+            langs: ["JavaScript"],
+            urls: {
+                github: "MindfulMinun/shawty"
             }
         }, {
             name: "game-of-life",
@@ -81,6 +90,5 @@ module.exports = function () {
         }
     ]
 
-    
     return out
 }
