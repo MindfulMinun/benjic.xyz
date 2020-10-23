@@ -15,7 +15,7 @@ I’m supposed to be studying.
 
 <section id="intro">
 
-Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] late last spring with an associate’s degree. I’m currently studying at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science. I like to [write&nbsp;code](/p/) and play the piano.
+Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] around May 2019 with an associate’s degree. I’m currently studying at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science. I like to [write&nbsp;code](/p/) and play the piano.
 
 In my free time, I like to write JavaScript. Check out some of the <a href="/p/" class="callout-text">things&nbsp;I’ve&nbsp;made</a>, I promise you they’re *(kinda)* cool.
 
@@ -47,7 +47,9 @@ I love to code. It’s my dream to write code for a living. I picked up JavaScri
 
 ## Contact
 
-You can find me all over the Internet as [MindfulMinun][Twitter], I can [prove it][Keybase]. Get in touch with me via old-fashioned [email], or through socials like [Twitter] or [Discord]. I’m also on [GitHub], [Glitch], [Keybase], [Mastodon], [LinkedIn] and many other places. Feel free to say hi!
+If you’re a recruiter, <a href="https://mindfulminun.keybase.pub/documents/cv/current.pdf" class="callout-text">check out my resume</a> and don’t hesitate to [email] me.
+
+You can find me all over the Internet as [MindfulMinun][Twitter], I can [prove it][Keybase]. Get in touch with me via old-fashioned [email], or reach out through socials like [Twitter] or [Discord]. I’m also on [GitHub], [Glitch], [Keybase], [Mastodon], [LinkedIn] and many other places. Feel free to say hi!
 
 </section>
 

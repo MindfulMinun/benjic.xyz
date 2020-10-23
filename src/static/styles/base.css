@@ -106,6 +106,7 @@ html, body {
     padding: 0 .1em;
     top: .02em;
     background-image: linear-gradient(45deg, #448aff 0%, #00e676 100%);
+    /* background-image: linear-gradient(45deg, #448aff 0%, #EA7EB8 100%); */
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

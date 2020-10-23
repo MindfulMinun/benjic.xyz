@@ -28,11 +28,11 @@ styles: |-
 
 {{ desc }} Keep in mind that this ***isn’t*** a complete portfolio.
 
-Check out my developer profiles on [GitHub] and [Glitch], or my professional profile on [LinkedIn].
+If you’re a recruiter, <a href="https://mindfulminun.keybase.pub/documents/cv/current.pdf" class="callout-text">check out my resume</a> and don’t hesitate to [email] me. Check out my developer profiles on [GitHub] and [Glitch], or my professional profile on [LinkedIn].
 
 ---
 
-<ul class="a11y project-list">
+<ul class="a11y project-list" id="projects">
 {%- for project in b.projects -%}
     <li>
         <strong>{{ project.name }}</strong>
@@ -67,6 +67,7 @@ Check out my developer profiles on [GitHub] and [Glitch], or my professional pro
 {%- endfor -%}
 </ul>
 
+[email]: mailto:benji@benjic.xyz
 [GitHub]: https://github.com/MindfulMinun
 [Glitch]: https://glitch.com/@MindfulMinun
 [LinkedIn]: https://www.linkedin.com/in/benji-cerda/

@@ -1,6 +1,14 @@
+console.log(choose([
+    "Hello world! I love you, you are my world. <3",
+    "Wow, you're looking pretty cute today, aren't ya?",
+    "I love you. So much. Please don't ever forget that.",
+    "Look at you, wow! I'm so proud of you!",
+    "Dude, you look so handsome. Everyday you look stunning.",
+    "I believe in you. Trust me, you can do anything."
+]))
 const footerP = document.querySelector('[data-blobify]')
 if (footerP) {
-    const choose = [
+    footerP.innerHTML = '<p>' + choose([
         "Made with :3c by MindfulMinun",
         "Made with love by MindfulMinun",
         "Made with <3 by MindfulMinun",
@@ -13,12 +21,20 @@ if (footerP) {
         "Made possible by <a href=\"https://ko-fi.com/mindfulminun\">contributions</a> from viewers like you.",
         "Made with <a href=\"https://github.com/MindfulMinun/benjic.xyz\">code</a> by MindfulMinun",
         "Made with love by Benji"
-    ]
-    footerP.innerHTML = `<p>${choose[Math.floor(Math.random() * choose.length)]}</p>`
+    ]) + '</p>'
 }
 
 if (navigator && navigator.serviceWorker) {
     navigator.serviceWorker.getRegistrations().then(regs => {
-        for (let reg of regs) { reg.unregister() }
+        for (let reg of regs) reg.unregister()
     })
+}
+
+/**
+ * @param {T[]} arr
+ * @returns {T}
+ * @template T
+ */
+function choose(arr) {
+    return arr[Math.floor(Math.random() * arr.length)]
 }
