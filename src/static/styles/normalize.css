@@ -9,16 +9,35 @@
     outline-color: white;
 }
 
+/*
+ * Target animation: Add a border, flash twice.
+ */
 :target {
     scroll-margin-top: 3rem;
-    animation: 1000ms look-at-me linear;
+    animation: 1500ms look-at-me linear;
 }
 @keyframes look-at-me {
-    0% { background-color: transparent; }
-    10% { background-color: highlight; }
-    20% { background-color: transparent; }
-    30% { background-color: highlight; }
-    100% { background-color: transparent; }
+    0% {
+        background-color: transparent;
+        box-shadow:
+            1px  1px 0 var(--primary),
+           -1px  1px 0 var(--primary),
+            1px -1px 0 var(--primary),
+           -1px -1px 0 var(--primary)
+        ;
+    }
+    5% { background-color: var(--primary); }
+    10% { background-color: transparent; }
+    20% { background-color: var(--primary); }
+    50% { background-color: transparent; }
+    75% {
+        box-shadow:
+            1px  1px 0 var(--primary),
+           -1px  1px 0 var(--primary),
+            1px -1px 0 var(--primary),
+           -1px -1px 0 var(--primary)
+        ;
+    }
 }
 
 html {
