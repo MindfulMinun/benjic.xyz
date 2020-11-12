@@ -1,0 +1,212 @@
+---
+layout: layouts/base
+start_date: 2020-10-23 02:42:12 -5
+date: 2020-11-12 02:51:56 -6
+title: undefined
+# Lets not make this explicitly public just yet
+eleventyExcludeFromCollections: true
+desc: A poem about code and loss of friendship.
+after_head: |-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        h1 > code { color: inherit; }
+        article > pre { white-space: pre; }
+        #footnotes p { margin-top: .5em; }
+
+        /* Some styles to suggest that the notes are clickable */
+        pre > a[href^="#"] {
+            color: inherit;
+            text-decoration: none;
+        }
+        pre.poem--visible-footnotes > a[href^="#"] {
+            border-bottom: 1px dashed currentColor;
+        }
+        pre > a[href^="#"]:focus,
+        pre > a[href^="#"]:hover {
+            color: var(--primary);
+            outline: none;
+        }
+    </style>
+---
+
+<h1><code>{{ title }}</code></h1>
+
+<p>{{ desc }} I began writing this poem on <time datetime="{{ start_date | toISODateTime }}" title="{{ start_date | toDateTime }}">{{ start_date | toDate }}</time>, and completed it <time datetime="{{ date | toISODateTime }}" title="{{ date | toDateTime }}">{{ date | toDate }}</time>.</p>
+
+<hr>
+
+<label class="block block-margin">
+    Underline content with footnotes?
+    <input type="checkbox" checked onclick="document.getElementById('poem').classList.toggle('poem--visible-footnotes')">
+</label>
+
+
+<article>
+<pre id="poem" class="poem--visible-footnotes">
+<a href="#hw-note" id="hw-1">Hello world</a>. It's a pleasure to meet you
+I love you, for you are all that I have
+You were there for me when I was feeling blue
+Indentation, four spaces to a tab
+
+Coding and tweeting are things I enjoy
+Suddenly, why do I feel so void?
+What I programmed was wrong, I'll wrap it in a <a href="#tc-note" id="tc-1">try-catch</a>
+I thought we were <a href="#immutable-note" id="immutable-1">immutable</a> like a <a href="#const-note" id="const-1"><code>const</code> in all caps</a>
+
+I'm <a href="#hw-note" id="hw-2">not a novice's program</a>. What the hell am I?
+I'd hate to lose you, don't delete me please
+I'm not a program, I'm human, with a need to cry
+Human interaction, you make me feel at ease
+
+Damn, I fucked up, I <a href="#api-note" id="api-1">used an undocumented API</a>
+I don't know what <a href="#this-note" id="this-1"><code>this</code></a> is, I used <a href="#apply-note" id="apply-1"><code>Function::apply</code></a>
+<a href="#instanceof-note" id="instanceof-1"><code>this instanceof Mistake</code>, <code>Blunder</code>, and <code>Error</code> are all true</a>
+I feel like I'm <a href="#mp-note" id="mp-1">monkey-patching</a> a friendship with glue
+
+I feel like a virus, I break everything I touch
+I've only ever caused you problems and struggles
+Still, you love and cherish me, you've done so so much
+Even made me feel good with kisses and cuddles
+
+I exported all my <a href="#fn-note" id="fn-1">methods</a>, <a href="#const-note" id="const-2"><code>const</code>s</a>, and even a <a href="#class-note" id="class-1">class</a>
+One of them was a <a href="#gen-note" id="gen-1">generator function</a>
+I'd never would've guessed they'd ditch me this fast
+I'm so sorry, I can't bear this compunction
+
+What I did was fucked up, but I don't think all is lost
+Why might they think I'm a <a href="#hat-note" id="hat-1">black hat</a>?
+You and few understood, the situation is as fragile as frost
+I've lost all my friends, <a href="#cat-note" id="cat-1">even the black cat</a>
+
+Oh <a href="#gc-note" id="gc-1">garbage collector</a>, please save me, console me
+A <a href="#tvbs-note" id="tvbs-1">temp var in block scope</a>, how sad, how lonely
+I'm an unused method, <a href="#cb-note" id="cb-1">callback</a> one last time
+Like <a href="#ub-note" id="ub-1">undefined behavior</a>, I know I'm out of line
+
+Please, please, <a href="#gc-note" id="gc-2" title="garbage collector">GC</a>, don't discard my memory
+Free, free, release all but that region of me
+Unload, clear your mind, spare some space
+Alone and so sorry, but I know my place
+
+<a href="#promise-note" id="promise-1">Unhandled promise rejections are deprecated.
+In the future, rejections will terminate the process.</a>
+My problems, <a href="#css-note" id="css-1">they're like CSS: cascaded</a>
+<a href="#pd-note" id="pd-1">Should've called <code>.preventDefault()</code></a>, now I'm reaping the losses
+
+Intimate, down to the metal. <a href="#fork-note" id="fork-1">Code committed, forked, and merged</a>
+You make me tremble, make me glitch. You make my voltage surge
+You've rewired me, reprogrammed me, hacked me
+Playing with firewall. Can't connect, <a href="#http403-note" id="http403-1">error code 403</a>
+
+Sexy software sitting on silicon
+<a href="#yhr-note" id="yhr-1">Yuki, Haruka, Rin</a>; they're all works of fiction
+This whole situation is so dumb and so stupid
+But you, somehow, you make me feel human
+
+So taboo, so difficult to say aloud
+Those events could be described in <a href="#md-note" id="md-1">Markdown or HTML</a>
+It's ugly, I was shy to say it in front of a crowd
+But I'll let everyone know if it means I won't have to say farewell
+
+I'm sorry, I don't know what else to do, except <a href="#await-note" id="await-1"><code>await</code></a>
+<a href="#pd-note" id="pd-2">Event listeners could've stopped it</a>, it wasn't fate
+Can we all heal? Probably not, only time will tell
+This feels exactly like <a href="#cbh-note" id="cbh-1">callback hell</a>
+</pre>
+</article>
+
+<hr>
+
+<aside id="footnotes">
+<ol>
+    <li id="hw-note">
+        <p><a href="#hw-1">Hello world</a>, <a href="#hw-2">not a novice's program</a>: A “hello world” program is a basic program that prints something to the screen. It is typically the first program someone learns to write, used as an introduction to a programming language.</p>
+    </li>
+    <li id="tc-note">
+        <p><a href="#tc-1">try-catch</a>: A region of code where an error could happen, along with a way to recover from that error if it does occur</p>
+    </li>
+    <li id="immutable-note">
+        <p><a href="#immutable-1">immutable</a>: In programming, an object is immutable if its properties cannot change. Here, I mean immutable with the sense of unwavering.</p>
+    </li>
+    <li id="const-note">
+        <p><a href="#const-1"><code>const</code> in all caps</a>, <a href="#const-2"><code>const</code>s</a>: A constant, a variable that cannot be reassigned.</p>
+        <p>In JavaScript, <code>const</code>s are typically written in all caps, such as in <code>Math.PI</code> and <code>Number.MAX_SAFE_INTEGER</code>, “pi” and “max safe integer” are capitalized. </code></p>
+    </li>
+    <li id="api-note">
+        <p><a href="#api-1">undocumented API</a>: An API is a way to talk to or delegate work to other pieces of code that you don't own or control. Using an API without reading its documentation is like building IKEA furniture without reading the instructions.</p>
+    </li>
+    <li id="this-note">
+        <p><a href="#this-1"><code>this</code></a>: A keyword in most programming languages, works like a pronoun, just like “this” or “it” in English.</p>
+    </li>
+    <li id="apply-note">
+        <p><a href="#apply-1"><code>Function::apply</code></a>: Apply is a method on functions, it invokes that function with a custom <code>this</code> value.</p>
+    </li>
+    <li id="instanceof-note">
+        <p><a href="#instanceof-1"><code>this instanceof Mistake</code>...</a>: The <code>instanceof</code> keyword asks whether the left falls into the category of the right.</p>
+        <p>For example, the statement <code>myCar instanceof Corolla</code> asks “Is <code>myCar</code> a <code>Corolla</code>?” This statement evaluates to <code>true</code> or <code>false</code>, which are booleans equivalent to yes and no.</p>
+    </li>
+    <li id="mp-note">
+        <p><a href="#mp-1">monkey-patching</a>: Repairing or patching code in a sloppy manner, usually without changing the original source.</p>
+    </li>
+    <li id="fn-note">
+        <p><a href="#fn-1">method</a>: A function is a procedure or set of instructions that can be executed on demand, along with parameters, like <code>alert('Hello world')</code> in JavaScript. A method is a function that is a member of an object, like <code>Math.sin()</code> is a member of <code>Math</code>.</p>
+    </li>
+    <li id="class-note">
+        <p><a href="#class-1">class</a>: A template for creating objects. An object is to a class like a cookie is to a cookie cutter.</p>
+    </li>
+    <li id="gen-note">
+        <p><a href="#gen-1">generator function</a>: A special kind of function that can pause, yield, and continue its execution.</p>
+    </li>
+    <li id="hat-note">
+        <p><a href="#hat-1">black hat</a>: A malicious hacker, the household definition of hacker. Someone who hacks for evil or personal gain.</p>
+    </li>
+    <li id="cat-note">
+        <p><a href="#cat-1">even the black cat</a>: Reference to a cat I loved very much: Goji. The first time we met, I fed him a stick of goo, he loved that shit. One time, I played Tic-Tac-Toe against him, it was surprisingly fun. I wish Goji could read this poem.</p>
+    </li>
+    <li id="gc-note">
+        <p><a href="#gc-1">garbage collector</a>, <a href="#gc-2">GC</a>: A piece of software that's in charge of releasing memory that isn't being used anymore.</p>
+    
+        <p>If memory were a whiteboard, and you’re filling it up quickly, the garbage collector is like an eraser that clears only the parts we’re not using anymore so we can reuse that space.</p>
+    </li>
+    <li id="tvbs-note">
+        <p><a href="#tvbs-1">temp var in block scope</a>: A throwaway variable with a short-lived, closeted, and lonely lifespan.</p>
+        <p>Variables in JavaScript can live in certain areas, called scopes. From widest range to smallest range, there's the global and local scopes. In local scope, there’s two more smaller scopes, function and block scope. The block scope is the narrowest scope.</p>
+    </li>
+    <li id="cb-note">
+        <p><a href="#cb-1">callback</a> (verb): Here, the word takes on the sense of “to inform, notify, or keep up to date.”</p>
+        <p>A callback (noun, more common) is a small function that's passed into another larger function. Then, that larger function invokes the callback to notify it of the completion of some task.</p>
+    </li>
+    <li id="ub-note">
+        <p><a href="#ub-1">undefined behavior</a>: Breaking the rules of the programming language, such as by dividing by zero, causing an overflow, indexing an array out of bounds, etc. Usually abbreviated as UB.</p>
+    </li>
+    <li id="promise-note">
+        <p><a href="#promise-1">Unhandled promise rejections...</a>: A reference to a common error in Node.js, caused by throwing an error in a Promise and not catching it. The full warning reads like this:</p>
+        <pre>DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.</pre>
+    </li>
+    <li id="css-note">
+        <p><a href="#css-1">like CSS: cascaded</a>: CSS is a styling language, stands for <em>Cascading Style Sheets</em>. Here, cascaded assumes the meaning of “falling rapidly in large amounts”</p>
+    </li>
+    <li id="pd-note">
+        <p><a href="#pd-1">Should've called <code>.preventDefault()</code></a>, <a href="#pd-2">event listeners could've stopped it</a>: Event listeners are callbacks that are triggered when an event fires (happens). The callback is passed an <code>Event</code>, which has a <code>preventDefault</code> method that allows it to be cancelled.</p>
+    </li>
+    <li id="fork-note">
+        <p><a href="#fork-1">Code committed, forked, and merged</a>: A reference to version control.</p>
+        <p>At a large codebase, you have to check out (as in “borrow from a library”) the code you want to edit. This means creating a fork or <em>forking</em> the state of the repository at that time. After creating a few changes, you add a description of what changes you made and <em>commit</em> them. Eventually, these small changes grow to something big, like an app's new feature. Once you're finished with your edits, you <em>merge</em> them all at once back onto the the main branch.</p>
+    </li>
+    <li id="http403-note">
+        <p><a href="#http403-1">error code 403</a>: The HTTP status code for <em>Forbidden</em>.</p>
+    </li>
+    <li id="yhr-note">
+        <p><a href="#yhr-1">Yuki, Haruka, Rin</a>: Software I've made named after anime characters. <a href="https://github.com/MindfulMinun/yuki">Yuki</a> was supposed to be a generic parser, but unfortunately  never completed. <a href="https://github.com/MindfulMinun/discord-haruka">Haruka</a> and <a href="https://github.com/MindfulMinun/rin">Rin</a> are Discord bots, written in CoffeeScript and TypeScript respectively.</p>
+    </li>
+    <li id="md-note">
+        <p><a href="#md-1">Markdown or HTML</a>: Sometimes writing words is easier than saying them. Markdown and HTML are markup languages, languages used to display text. <em>That letter</em> was written in Markdown, and this poem is written in HTML.</p>
+    </li>
+    <li id="await-note">
+        <p><a href="#await-1"><code>await</code></a>: This JavaScript keyword allows an async function to pause execution until the following promise settles. Here, I mean await in the sense of “this is out of my hands, I can't offer anything except patience.”</p>
+    </li>
+    <li id="cbh-note">
+        <p><a href="#cbh-1">callback hell</a>: JavaScript code characterized by many callbacks, resembling a pyramid, leading to loss of control. <a href="http://callbackhell.com/">This website explains it more technically.</a></p>
+    </li>
+</ol>
+</aside>
