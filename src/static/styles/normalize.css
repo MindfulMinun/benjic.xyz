@@ -95,6 +95,7 @@ code {
     font-weight: 400;
     white-space: nowrap;
 }
+q::before, q::after{ content: ''; }
 small {
     font-size: 87.5%;
     font-feature-settings: "subs";

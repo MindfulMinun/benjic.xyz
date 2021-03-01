@@ -21,7 +21,8 @@ module.exports = function (config) {
             hour: 'numeric',
             minute: 'numeric',
             second: 'numeric',
-            hour12: false
+            hour12: false,
+            timeZone: 'America/Chicago'
         })
     })
 
@@ -33,7 +34,8 @@ module.exports = function (config) {
         return date.toLocaleDateString('en-US', {
             month: 'short',
             day: 'numeric',
-            year: 'numeric'
+            year: 'numeric',
+            timeZone: 'America/Chicago'
         })
     })
     

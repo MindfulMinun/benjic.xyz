@@ -1,0 +1,8 @@
+{
+    "trailingSlash": true,
+    "redirects": [{
+        "source": "/p/a-text-based-game/",
+        "destination": "https://mm-text.glitch.me/?ref=xyz-redir",
+        "permanent": true
+    }]
+}

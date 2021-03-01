@@ -1,3 +1,4 @@
+/// <reference lib="dom" />
 console.log(choose([
     "Hello world! I love you, you are my world. <3",
     "Wow, you're looking pretty cute today, aren't ya?",

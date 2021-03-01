@@ -2,7 +2,7 @@
   "name": "11ty",
   "version": "0.1.0",
   "description": "A static site built with 11ty",
-  "author": "MindfulMinun <importantmails4bc@gmail.com> (https://benjic.xyz)",
+  "author": "MindfulMinun <benji@benjic.xyz> (https://benjic.xyz)",
   "contributors": [],
   "homepage": "https://github.com/MindfulMinun/11ty",
   "repository": "github:MindfulMinun/11ty",
@@ -11,12 +11,12 @@
   "_type": "module",
   "scripts": {
     "watch": "rm -rf ./dist && npm run build:images & npx @11ty/eleventy --serve --port=1337",
-    "build": "rm -rf ./dist && npm run build:images & npx @11ty/eleventy",
+    "build": "rm -rf ./dist && npm run build:images && npx @11ty/eleventy",
     "build:images": "node ./11ty-plugins/convert-images.mjs --experimental-module",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "^12"
+    "node": "^14"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",

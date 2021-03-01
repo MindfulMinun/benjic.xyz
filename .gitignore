@@ -10,5 +10,6 @@ lazy/
 
 .DS_Store
 
-# Local Netlify folder
+# Deployments
 .netlify
+.vercel
