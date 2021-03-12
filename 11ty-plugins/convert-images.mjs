@@ -40,21 +40,21 @@ fs.readdir(inDir, async function (err, files) {
         }
         succeeded++
 
-        let i = 1
+        let i = 0
         while (1 <= density) {
             // default format
             sharp(input)
-                .resize({ width: Math.round(width / i) })
+                .resize({ width: Math.round(width / (2 ** i)) })
                 .toFile(path.join(outDir, `${name}@${density}x.${suffix}`))
         
             // webp
             sharp(input)
                 .toFormat('webp')
-                .resize({ width: Math.round(width / i) })
+                .resize({ width: Math.round(width / (2 ** i)) })
                 .toFile(path.join(outDir, `${name}@${density}x.webp`))
             
-            density /= 2
-            i *= 2
+            density--
+            i++
         }
     }
 

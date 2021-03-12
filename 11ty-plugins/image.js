@@ -16,7 +16,7 @@ const MEDIA_SIZES = {
  * @param {string} [out.ratio] The image's aspect ratio
  * @param {string} [out.id] The labels id, not the image's
  * @param {string} [out.style] Any styles to add to the image box
- * @param {keyof MEDIA_SIZES} [out.size] 
+ * @param {'small' | 'medium' | 'large'} [out.size] 
  */
 // export default function (out) {
 module.exports = function (out) {

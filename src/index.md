@@ -21,7 +21,7 @@ In my free time, I like to write JavaScript. Check out some of the <a href="/p/"
 
 </section>
 
-{% image
+{# {% image
     alt="This is me.",
     srcset="
         /static/images/retrato-1-1@1x.webp 612w,
@@ -36,7 +36,28 @@ In my free time, I like to write JavaScript. Check out some of the <a href="/p/"
     id="me",
     style="background: #306bad;",
     size="small"
-%}
+%} #}
+
+<figure id="me">
+    <div class="sticky sticky--small">
+        <picture class="ratiod" style="--ratio:1; background:#306bad;">
+            <source srcset="
+                /static/images/retrato-1-1@4x.webp 2448w,
+                /static/images/retrato-1-1@3x.webp 1224w,
+                /static/images/retrato-1-1@2x.webp 612w,
+                /static/images/retrato-1-1@1x.webp 306w
+            " type="image/webp">
+            <source srcset="
+                /static/images/retrato-1-1@4x.jpeg 2448w,
+                /static/images/retrato-1-1@3x.jpeg 1224w,
+                /static/images/retrato-1-1@2x.jpeg 612w,
+                /static/images/retrato-1-1@1x.jpeg 306w
+            " type="image/jpeg">
+            <img alt="" src="/static/images/retrato-1-1@1x.jpeg" loading="lazy">
+        </picture>
+        <figcaption><p class="sticky__label">This is me.</p></figcaption>
+    </div>
+</figure>
 
 <section id="code">
 
