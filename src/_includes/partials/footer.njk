@@ -5,17 +5,19 @@
                 <h3 class="sr-only">Footer</h3>
                 <a class="footer__img" href="/" rel="me">
                     <span class="sr-only">Home</span>
-                    <picture>
-                        <source srcset="
-                            /static/images/pfp-2020@2x.webp 600w,
-                            /static/images/pfp-2020@1x.webp 300w
-                        " type="image/webp">
-                        <source srcset="
-                            /static/images/pfp-2020@2x.png 600w,
-                            /static/images/pfp-2020@1x.png 300w
-                        " type="image/webp">
-                        <img src="/static/images/pfp-2020@1x.png" alt="" loading="lazy">
-                    </picture>
+                    <div class="ratiod" style="--ratio: 1;background: 0;">
+                        <picture>
+                            <source srcset="
+                                /static/images/pfp-2020@2x.webp 600w,
+                                /static/images/pfp-2020@1x.webp 300w
+                            " type="image/webp">
+                            <source srcset="
+                                /static/images/pfp-2020@2x.png 600w,
+                                /static/images/pfp-2020@1x.png 300w
+                            " type="image/webp">
+                            <img class="ratiod__target" src="/static/images/pfp-2020@1x.png" alt="" loading="lazy">
+                        </picture>
+                    </div>
                 </a>
                 <div class="flex-grow">
                     <p>I’m supposed to be studying.</p>

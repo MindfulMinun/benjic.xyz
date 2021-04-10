@@ -1,7 +1,12 @@
 // @ts-nocheck -- 11ty has no type documentation
+// import image from './11ty-plugins/image.js'
+// import twemoji from './11ty-plugins/twemoji'
+
 module.exports = function (config) {
     config.addShortcode('image', require('./11ty-plugins/image'))
     config.addFilter('twemoji', require('./11ty-plugins/twemoji'))
+    // config.addShortcode('image', image)
+    // config.addFilter('twemoji', twemoji)
     config.addFilter("addOrigin", path => `https://benjic.xyz${path}`)
     config.addPassthroughCopy(`src/static`)
     config.addPassthroughCopy({

@@ -31,7 +31,9 @@ if (navigator && navigator.serviceWorker) {
     })
 }
 
+
 /**
+ * @see https://mindfulminun.keybase.pub/scripts/lib/array.ts
  * @param {T[]} arr
  * @returns {T}
  * @template T

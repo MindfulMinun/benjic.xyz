@@ -60,6 +60,9 @@ If you’re a recruiter, <a href="https://mindfulminun.keybase.pub/documents/cv/
                 {%- if project.urls.view -%}
                     <a href="{{ project.urls.view }}">View live</a>
                 {%- endif -%}
+                {%- if project.urls.post -%}
+                    <a href="{{ project.urls.post }}">Read post</a>
+                {%- endif -%}
             </span>
             {%- endif -%}
         </div>

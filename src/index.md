@@ -15,9 +15,9 @@ I’m supposed to be studying.
 
 <section id="intro">
 
-Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] around May 2019 with an associate’s degree. I’m currently studying at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science. I like to [write&nbsp;code](/p/) and play the piano.
+Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] around May 2019 with an associate’s degree. I’m currently studying at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science, planning to graduate in the autumn of 2022. I'm an incoming software engineering intern at Adobe. I like to [write&nbsp;code](/p/) and play the piano.
 
-In my free time, I like to write JavaScript. Check out some of the <a href="/p/" class="callout-text">things&nbsp;I’ve&nbsp;made</a>, I promise you they’re *(kinda)* cool.
+In my free time, I like to write JavaScript and TypeScript, especially in [Deno]. Check out some of the <a href="/p/" class="callout-text">things&nbsp;I’ve&nbsp;made</a>, I promise you they’re *(kinda)* cool.
 
 </section>
 
@@ -40,28 +40,30 @@ In my free time, I like to write JavaScript. Check out some of the <a href="/p/"
 
 <figure id="me">
     <div class="sticky sticky--small">
-        <picture class="ratiod" style="--ratio:1; background:#306bad;">
-            <source srcset="
-                /static/images/retrato-1-1@4x.webp 2448w,
-                /static/images/retrato-1-1@3x.webp 1224w,
-                /static/images/retrato-1-1@2x.webp 612w,
-                /static/images/retrato-1-1@1x.webp 306w
-            " type="image/webp">
-            <source srcset="
-                /static/images/retrato-1-1@4x.jpeg 2448w,
-                /static/images/retrato-1-1@3x.jpeg 1224w,
-                /static/images/retrato-1-1@2x.jpeg 612w,
-                /static/images/retrato-1-1@1x.jpeg 306w
-            " type="image/jpeg">
-            <img alt="" src="/static/images/retrato-1-1@1x.jpeg" loading="lazy">
-        </picture>
+        <div class="ratiod" style="--ratio:1; background:#306bad;">
+            <picture>
+                <source srcset="
+                    /static/images/retrato-1-1@4x.webp 2448w,
+                    /static/images/retrato-1-1@3x.webp 1224w,
+                    /static/images/retrato-1-1@2x.webp 612w,
+                    /static/images/retrato-1-1@1x.webp 306w
+                " type="image/webp">
+                <source srcset="
+                    /static/images/retrato-1-1@4x.jpeg 2448w,
+                    /static/images/retrato-1-1@3x.jpeg 1224w,
+                    /static/images/retrato-1-1@2x.jpeg 612w,
+                    /static/images/retrato-1-1@1x.jpeg 306w
+                " type="image/jpeg">
+                <img class="ratiod__target" alt="" src="/static/images/retrato-1-1@1x.jpeg" loading="lazy">
+            </picture>
+        </div>
         <figcaption><p class="sticky__label">This is me.</p></figcaption>
     </div>
 </figure>
 
 <section id="code">
 
-I love to code. It’s my dream to write code for a living. I picked up JavaScript during my freshman year of high school while messing around with Firefox Scratchpad. I naturally went on to learn the other two web languages, HTML and CSS. Over the course of these 5 years, I’ve become fluent in front-end workflow, combining technologies ranging from CI with Heroku and Netlify, GitHub Actions, integration with Visual&nbsp;Studio Code, backends in Node.js with Express, you name it.
+I love to code. It’s my dream to write code for a living. I picked up JavaScript during my freshman year of high school while messing around with Firefox Scratchpad. I naturally went on to learn the other two web languages, HTML and CSS. Over the course of these 5 years, I’ve become fluent in front-end workflow, combining technologies ranging from CI with Heroku and Netlify, GitHub Actions, integration with Visual&nbsp;Studio Code, backends in Deno or Node.js with Express, you name it.
 
 </section>
 <section id="contact">
@@ -84,3 +86,4 @@ You can find me all over the Internet as [MindfulMinun][Twitter], I can [prove i
 [LinkedIn]: https://www.linkedin.com/in/benji-cerda/
 [templejc]: https://templejc.edu
 [utd]: https://utdallas.edu
+[Deno]: https://deno.land

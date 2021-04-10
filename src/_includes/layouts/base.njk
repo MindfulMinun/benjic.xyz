@@ -60,6 +60,7 @@ date: Last Modified
         <link rel="stylesheet" href="/static/styles/normalize.css">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="stylesheet" href="/static/styles/base.css">
+        <script src="/static/scripts/main.js" type="module"></script>
         {% if styles -%}
         <style>{{ styles | safe }}</style>
         {%- endif %}
@@ -78,6 +79,5 @@ date: Last Modified
             {{ content | twemoji | safe }}
         </main>
         {% include '../partials/footer.njk' %}
-        <script src="/static/scripts/main.js"></script>
     </body>
 </html>

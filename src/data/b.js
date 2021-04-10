@@ -9,6 +9,7 @@
  * @prop {string} [urls.glitch] A link to a live demo on Glitch
  * @prop {string} [urls.source] A link to a live demo, will be labelled "Source"
  * @prop {string} [urls.view] A link to a live demo, will be labelled "View"
+ * @prop {string} [urls.post] A link to a post
  */
 // export default function () {
 module.exports = function () {
@@ -19,6 +20,15 @@ module.exports = function () {
 
     /** @type {MindfulProject[]} */
     out.projects = [
+        {
+            name: "moe-relay",
+            desc: "Synchronize various clients to some streaming services, such as YouTube or twist.moe.",
+            date: "2020-12-07",
+            langs: ["TypeScript"],
+            urls: {
+                glitch: "moe-relay",
+            }
+        },
         {
             name: "Sakura",
             desc: "Give your photos a 🌸 pink manga aesthetic 🌸 by adding a pink filter to it.",
@@ -69,7 +79,7 @@ module.exports = function () {
             langs: ["JavaScript"],
             urls: {
                 github: "MindfulMinun/yt-for-me",
-                view: "https://yt.benjic.xyz"
+                post: "https://benjic.xyz/p/yt-for-me"
             }
         }, {
             name: "Haruka",
