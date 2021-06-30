@@ -21,6 +21,14 @@ module.exports = function () {
     /** @type {MindfulProject[]} */
     out.projects = [
         {
+            name: "mini",
+            desc: "A URL shortener written in Deno.",
+            langs: ["TypeScript"],
+            date: "2021-04-10",
+            urls: {
+                github: "MindfulMinun/mini",
+            }
+        }, {
             name: "moe-relay",
             desc: "Synchronize various clients to some streaming services, such as YouTube or twist.moe.",
             date: "2020-12-07",
@@ -28,8 +36,7 @@ module.exports = function () {
             urls: {
                 glitch: "moe-relay",
             }
-        },
-        {
+        }, {
             name: "Sakura",
             desc: "Give your photos a 🌸 pink manga aesthetic 🌸 by adding a pink filter to it.",
             date: "2020-09-11",
@@ -47,14 +54,14 @@ module.exports = function () {
                 glitch: "mm-d-flat",
                 github: "MindfulMinun/d-flat"
             }
-        }, {
-            name: "shawty",
-            desc: "A link shortener written in Deno",
-            date: "2020-07-28",
-            langs: ["JavaScript"],
-            urls: {
-                github: "MindfulMinun/shawty"
-            }
+        // }, {
+        //     name: "shawty",
+        //     desc: "A link shortener written in Deno",
+        //     date: "2020-07-28",
+        //     langs: ["JavaScript"],
+        //     urls: {
+        //         github: "MindfulMinun/shawty"
+        //     }
         }, {
             name: "game-of-life",
             desc: "A JavaScript implementation of Conway’s Game of Life, using BigUint64Arrays to ensure it runs lightning-fast.",
@@ -79,7 +86,7 @@ module.exports = function () {
             langs: ["JavaScript"],
             urls: {
                 github: "MindfulMinun/yt-for-me",
-                post: "https://benjic.xyz/p/yt-for-me"
+                post: "https://benjic.xyz/b/yt-for-me"
             }
         }, {
             name: "Haruka",

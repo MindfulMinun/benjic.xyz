@@ -27,7 +27,9 @@ date: Last Modified
         <link rel="me" href="mailto:benji@benjic.xyz">
         <link rel="pgpkey" href="https://keybase.io/mindfulminun/pgp_keys.asc">
 
-        {% if not eleventyExcludeFromCollections -%}
+        {% if eleventyExcludeFromCollections -%}
+        <meta name="robots" content="noindex">
+        {% else %}
         <!-- OpenGraph -->
         {% if title -%}
         <meta property="og:title"              content="{{ title }}">
@@ -52,8 +54,6 @@ date: Last Modified
         <meta property="twitter:widgets:theme" content="dark">
         <meta property="twitter:widgets:link-color"   content="{{ accent }}">
         <meta property="twitter:widgets:border-color" content="{{ accent }}">
-        {% else %}
-        <meta name="robots" content="noindex">
         {%- endif %}
 
         <!-- Styles -->

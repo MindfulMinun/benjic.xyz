@@ -74,7 +74,7 @@ pre {
 ul, ol { padding-left: 2em; }
 a { background-color: transparent; }
 a, button { cursor: pointer; }
-[href] {
+:any-link {
     color: var(--primary);
     font-weight: 400;
     text-decoration: none;
@@ -93,9 +93,15 @@ code {
     color: var(--secondary);
     font-style: italic;
     font-weight: 400;
-    white-space: nowrap;
 }
-q::before, q::after{ content: ''; }
+q::before, q::after { content: ''; }
+blockquote {
+    margin: 1em -1em 0;
+    padding: 0 1em;
+    border-left: 4px solid var(--secondary);
+    font-style: italic;
+}
+blockquote em { font-style: normal; }
 small {
     font-size: 87.5%;
     font-feature-settings: "subs";
@@ -189,6 +195,10 @@ img.emoji {
     overflow: hidden;
 }
 
+.muted {
+    opacity: .52;
+}
+
 ul.a11y, ol.a11y {
     padding: 0;
     list-style-type: none;
@@ -198,11 +208,16 @@ ul.a11y, ol.a11y {
 
 .flex {
     display: flex;
+    gap: 1em;
 }
+.flex--no-gap { gap: 0; }
 .flex--column {
     flex-direction: column;
 }
-.flex:not(.flex--column) > * {
+.flex--baseline {
+    align-items: baseline;
+}
+.flex {
     margin-top: auto;
     margin-bottom: auto;
 }

@@ -12,11 +12,12 @@ if (footerP) {
     footerP.innerHTML = '<p>' + choose([
         "Made with :3c by MindfulMinun",
         "Made with love by MindfulMinun",
+        "Made by hand by MindfulMinun",
         "Made with <3 by MindfulMinun",
         "Made with ;) by MindfulMinun",
         "Made with 11ty by MindfulMinun",
         "Made with you in mind by MindfulMinun",
-        "Made with `Uncaught TypeError: undefined is not a function` by MindfulMinun",
+        "Made with <code>Uncaught TypeError: undefined is not a function</code> by MindfulMinun",
         "Made with MindfulMinun by <3",
         "Made with ___ by ___",
         "Made possible by <a href=\"https://ko-fi.com/mindfulminun\">contributions</a> from viewers like you.",
@@ -30,7 +31,6 @@ if (navigator && navigator.serviceWorker) {
         for (let reg of regs) reg.unregister()
     })
 }
-
 
 /**
  * @see https://mindfulminun.keybase.pub/scripts/lib/array.ts

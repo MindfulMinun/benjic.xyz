@@ -18,6 +18,7 @@ html, body {
     font-size: 16px;
     line-height: 1.5;
     height: 100%;
+    color-scheme: dark;
 }
 
 .container {
@@ -29,7 +30,6 @@ html, body {
 
 /* Layout */
 .footer {
-    margin-top: 1em;
     background-color: #393939;
     display: block;
 }
@@ -39,9 +39,6 @@ html, body {
 .footer__ribbon p {
     margin: 0;
     opacity: .52;
-}
-.footer__ppal .flex-grow {
-    margin-left: 1em;
 }
 .footer__ppal ul.a11y {
     display: flex;
@@ -61,6 +58,10 @@ html, body {
     width: 100%;
     height: auto;
 }
+.footer__info {
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 /* Microcomponents */
 .sticky {
@@ -71,6 +72,11 @@ html, body {
     margin: .5em 1em 0;
     color: var(--alt);
     font-style: italic;
+}
+
+.crumbs {
+    color: var(--alt);
+    opacity: .72;
 }
 
 .ratiod {
@@ -113,6 +119,27 @@ html, body {
     background-clip: text;
     text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
+}
+
+.xyz-list {
+    display: grid;
+    align-items: center;
+    gap: 1em;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
+.xyz-list > a {
+    color: inherit;
+    font-weight: inherit;
+}
+.xyz-list li strong {
+    font-size: 1.5em;
+}
+.xyz-list li p {
+    margin: 0 0 .5em;
+}
+.xyz-list li p {
+    margin: 0;
+    margin-bottom: .5em;
 }
 
 @media only screen and (min-width: 560px) {
