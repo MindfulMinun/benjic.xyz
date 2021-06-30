@@ -1,0 +1,27 @@
+---
+title: Posts
+desc: 
+layout: layouts/base
+---
+
+<h1>{{ title }}</h1>
+
+<p>B is for... posts. Not blog because I might dump other stuff here. I'm debating on whether I should create an RSS feed...</p>
+
+<hr>
+
+<ul class="a11y xyz-list">
+{% for post in collections.post | reverse %}
+    <a href="{{ post.url }}">
+        <li>
+            <strong>{{ post.data.title }}</strong>
+            <p>{{ post.data.desc }}</p>
+            <div class="flex muted">
+                <time datetime="{{ post.data.date | toISODateTime }}" title="{{ post.data.date | toDateTime }}">{{ post.data.date | toDate }}</time>
+                <span class="flex-grow"></span>
+                <span>{{ post.data.tags | join(", ") }}</span>
+            </div>
+        </li>
+    </a>
+{% endfor %}
+</ul>

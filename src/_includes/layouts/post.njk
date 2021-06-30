@@ -1,0 +1,29 @@
+---
+layout: layouts/base
+---
+
+<article>
+    <header>
+        <div class="flex flex--baseline" style="flex-wrap: wrap;">
+            <h1>
+            {% if htmlTitle %}
+                {{ htmlTitle | safe }}
+            {% else %}
+                {{ title }}
+            {% endif %}
+            </h1>
+
+            <div class="flex-grow"></div>
+            <span class="crumbs">
+                <a href="/b/">posts</a> /
+                <a href="{{ page.url }}" aria-current="page">{{ page.fileSlug }}</a>
+            </span>
+        </div>
+
+        <p>{{ desc | safe }}</p>
+    </header>
+
+    <hr>
+
+    {{ content | safe }}
+</article>

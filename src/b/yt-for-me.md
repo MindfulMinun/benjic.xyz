@@ -1,14 +1,13 @@
 ---
+layout: layouts/post
 title: yt-for-me
-desc: yt-for-me was a project I wrote in 2019, designed to be a YouTube clone with download capabilites.
-layout: layouts/base
+desc: >
+    yt-for-me was a project I wrote in 2019, designed to be a YouTube clone with download capabilities.
+tags:
+    - post
+    - project
+date: 2021-03-11 12:00:00-05
 # eleventyExcludeFromCollections: true
----
-
-# {{ title }} – writeup
-
-[yt-for-me] was a project I wrote in 2019, designed to be a YouTube clone with download capabilites.
-
 ---
 
 The backend uses Express and Mustache for templating. It's available in both English and Spanish. It uses a vanilla JS stack, without any frameworks. The app consists of 3 different views: the homepage, the search view, and the video view. I chucked my code so that only scripts critical for loading this specific view are loaded, and all other scripts are are async + deferred.

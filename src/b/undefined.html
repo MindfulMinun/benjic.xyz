@@ -1,11 +1,15 @@
 ---
-layout: layouts/base
+layout: layouts/post
 start_date: 2020-10-23 02:42:12 -5
 date: 2020-11-12 02:51:56 -6
 title: undefined
-# Lets not make this explicitly public just yet
-eleventyExcludeFromCollections: true
+htmlTitle: <code>undefined</code>
 desc: A poem about code and loss of friendship.
+tags:
+    - post
+    - poem
+# Lets not make this explicitly public just yet
+# eleventyExcludeFromCollections: true
 after_head: |-
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
     <style>
@@ -29,11 +33,7 @@ after_head: |-
     </style>
 ---
 
-<h1><code>{{ title }}</code></h1>
-
-<p>{{ desc }} I began writing this poem on <time datetime="{{ start_date | toISODateTime }}" title="{{ start_date | toDateTime }}">{{ start_date | toDate }}</time>, and completed it <time datetime="{{ date | toISODateTime }}" title="{{ date | toDateTime }}">{{ date | toDate }}</time>.</p>
-
-<hr>
+<p>I began writing this poem on <time datetime="{{ start_date | toISODateTime }}" title="{{ start_date | toDateTime }}">{{ start_date | toDate }}</time>, and completed it <time datetime="{{ date | toISODateTime }}" title="{{ date | toDateTime }}">{{ date | toDate }}</time>.</p>
 
 <label class="block block-margin">
     Underline content with footnotes?
