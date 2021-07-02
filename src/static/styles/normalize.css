@@ -41,8 +41,8 @@
 }
 
 html {
-    line-height: 1.15; 
-    -webkit-text-size-adjust: 100%; 
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
 }
 body, figure { margin: 0; }
 main { display: block; }
@@ -82,7 +82,7 @@ a, button { cursor: pointer; }
 abbr[title] {
     border-bottom: none;
     text-decoration: underline;
-    text-decoration: underline dotted; 
+    text-decoration: underline dotted;
 }
 b, strong, .bold { font-weight: bolder; }
 i, em, .italic { font-style: italic; }
@@ -115,6 +115,18 @@ sup, sub {
     position: relative;
     vertical-align: baseline;
 }
+ins, del {
+    text-decoration: inherit;
+}
+del {
+    text-decoration: line-through;
+    text-decoration-thickness: .125em;
+    background-color: rgb(235 28 76 / .4);
+}
+ins {
+    font-style: italic;
+    background-color: rgb(0 230 118 / .4);
+}
 sup { font-feature-settings: "sups"; }
 sub { font-feature-settings: "subs"; }
 img, video, audio {
@@ -124,10 +136,10 @@ img, video, audio {
     height: auto;
 }
 button, input, optgroup, select, textarea {
-    font-family: inherit; 
-    font-size: 100%; 
-    line-height: 1.15; 
-    margin: 0; 
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
 }
 button, input { overflow: visible; }
 button, select { text-transform: none; }
@@ -143,29 +155,29 @@ button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focus
 }
 fieldset { padding: 0.35em 0.75em 0.625em; }
 legend {
-    box-sizing: border-box; 
-    color: inherit; 
-    display: table; 
-    max-width: 100%; 
-    padding: 0; 
-    white-space: normal; 
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
 }
 progress { vertical-align: baseline; }
 textarea { overflow: auto; }
 [type="checkbox"], [type="radio"] {
-    box-sizing: border-box; 
-    padding: 0; 
+    box-sizing: border-box;
+    padding: 0;
 }
 [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
 [type="search"] {
-    -webkit-appearance: textfield; 
-    outline-offset: -2px; 
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
 }
 [type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
 ::-webkit-file-upload-button {
-    -webkit-appearance: button; 
-    font: inherit; 
+    -webkit-appearance: button;
+    font: inherit;
 }
 details { display: block; }
 summary { display: list-item; }
