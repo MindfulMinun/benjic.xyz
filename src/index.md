@@ -15,7 +15,7 @@ I’m supposed to be studying.
 
 <section id="intro">
 
-Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] around May 2019 with an associate’s degree. I’m currently studying at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science, planning to graduate in the autumn of 2022. I’m currently working as a Software Engineer&nbsp;Intern at [Adobe] in [Digital&nbsp;Experience][adbe-dx], specifically under <!-- <del>Magento</del> <ins>Adobe Commerce</ins> --> [Adobe&nbsp;Commerce][adbe-commerce]. (check out my commits on [magento/knowledge-base]!) I like to [write&nbsp;code](/p/) and play the piano.
+Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] around May 2019 with an associate’s degree. I’m currently studying at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science, planning to graduate in the autumn of 2022. Over the summer I worked as a Software Engineer&nbsp;Intern at [Adobe] in [Digital&nbsp;Experience][adbe-dx], specifically under <!-- <del>Magento</del> <ins>Adobe Commerce</ins> --> [Adobe&nbsp;Commerce][adbe-commerce]. (Check out my commits on [magento/knowledge-base]!) I like to [write&nbsp;code](/p/) and play the piano.
 
 In my free time, I like to write JavaScript and TypeScript, especially in [Deno]. Check out some of the <a href="/p/" class="callout-text">things&nbsp;I’ve&nbsp;made</a>, I promise you they’re *(kinda)* cool.
 

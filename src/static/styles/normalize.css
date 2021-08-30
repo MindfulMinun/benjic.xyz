@@ -63,7 +63,7 @@ hr {
 }
 pre {
     background-color: #000;
-    font-size: 14px;
+    font-size: 80%;
     padding: 1rem;
     margin: 1rem -1rem 0;
     overflow-x: scroll;
@@ -84,7 +84,7 @@ abbr[title] {
     text-decoration: underline;
     text-decoration: underline dotted;
 }
-b, strong, .bold { font-weight: bolder; }
+b, strong, .bold { font-weight: 500; }
 i, em, .italic { font-style: italic; }
 pre, code, kbd, samp {
     font-family: "Roboto Mono", monospace, monospace;
@@ -92,7 +92,7 @@ pre, code, kbd, samp {
 code {
     color: var(--secondary);
     font-style: italic;
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 q::before, q::after { content: ''; }
 blockquote {
