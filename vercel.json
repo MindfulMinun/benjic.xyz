@@ -4,5 +4,9 @@
         "source": "/p/a-text-based-game/",
         "destination": "https://mm-text.glitch.me/?ref=xyz-redir",
         "permanent": true
+    }, {
+        "source": "/resume/",
+        "destination": "https://mindfulminun.keybase.pub/documents/cv/current.pdf",
+        "permanent": true
     }]
 }

@@ -21,26 +21,9 @@ In my free time, I like to write JavaScript and TypeScript, especially in [Deno]
 
 </section>
 
-{# {% image
-    alt="This is me.",
-    srcset="
-        /static/images/retrato-1-1@1x.webp 612w,
-        /static/images/retrato-1-1@1x.jpeg 612w,
-        /static/images/retrato-1-1@2x.webp 1224w,
-        /static/images/retrato-1-1@2x.jpeg 1224w,
-        /static/images/retrato-1-1@4x.webp 2448w,
-        /static/images/retrato-1-1@4x.jpeg 2448w
-    ",
-    src="/static/images/retrato-1-1@2x.jpeg",
-    ratio="1",
-    id="me",
-    style="background: #306bad;",
-    size="small"
-%} #}
-
 <figure id="me">
     <div class="sticky sticky--small">
-        <div class="ratiod" style="--ratio:1; background:#306bad;">
+        <div class="ratiod" style="--ratio: 1; background: #306bad;">
             <picture>
                 <source srcset="
                     /static/images/retrato-1-1@4x.webp 2448w,
@@ -70,7 +53,7 @@ I love to code. It’s my dream to write code for a living. I picked up JavaScri
 
 ## Contact
 
-If you’re a recruiter, <a href="https://mindfulminun.keybase.pub/documents/cv/current.pdf" class="callout-text">check out my resume</a> and don’t hesitate to [email] me.
+If you’re a recruiter, <a href="https://benjic.xyz/resume/" class="callout-text">check out my resume</a> and don’t hesitate to [email] me.
 
 You can find me all over the Internet as [MindfulMinun][Twitter], I can [prove it][Keybase]. Get in touch with me via old-fashioned [email], or reach out through socials like [Twitter] or [Discord]. I’m also on [GitHub], [Glitch], [Keybase], [Mastodon], [LinkedIn] and many other places. Feel free to say hi!
 

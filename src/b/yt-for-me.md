@@ -10,7 +10,7 @@ date: 2021-03-11 12:00:00-05
 # eleventyExcludeFromCollections: true
 ---
 
-The backend uses Express and Mustache for templating. It's available in both English and Spanish. It uses a vanilla JS stack, without any frameworks. The app consists of 3 different views: the homepage, the search view, and the video view. I chucked my code so that only scripts critical for loading this specific view are loaded, and all other scripts are are async + deferred.
+The backend uses Express and Mustache for templating. It's available in both English and Spanish. It uses a vanilla JS stack, without any frameworks. The app consists of 3 different views: the homepage, the search view, and the video view. I chunked my code so that only scripts critical for loading this specific view are loaded, and all other scripts are are async + deferred.
 
 <div class="sticky">
     <div class="ratiod" style="--ratio: 1.6;">

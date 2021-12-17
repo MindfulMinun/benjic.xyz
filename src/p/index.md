@@ -12,7 +12,7 @@ styles: |-
 
 {{ desc }} Keep in mind that this ***isn’t*** a complete portfolio.
 
-If you’re a recruiter, <a href="https://mindfulminun.keybase.pub/documents/cv/current.pdf" class="callout-text">check out my resume</a> and don’t hesitate to [email] me. Check out my developer profiles on [GitHub] and [Glitch], or my professional profile on [LinkedIn].
+If you’re a recruiter, <a href="https://benjic.xyz/resume/" class="callout-text">check out my resume</a> and don’t hesitate to [email] me. Check out my developer profiles on [GitHub] and [Glitch], or my professional profile on [LinkedIn].
 
 ---
 
