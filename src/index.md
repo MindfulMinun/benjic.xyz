@@ -15,7 +15,7 @@ I’m supposed to be studying.
 
 <section id="intro">
 
-Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] around May 2019 with an associate’s degree. I’m currently studying at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science, planning to graduate in the autumn of 2022. Over the summer I worked as a Software Engineer&nbsp;Intern at [Adobe] in [Digital&nbsp;Experience][adbe-dx], specifically under <!-- <del>Magento</del> <ins>Adobe Commerce</ins> --> [Adobe&nbsp;Commerce][adbe-commerce]. (Check out my commits on [magento/knowledge-base]!) I like to [write&nbsp;code](/p/) and play the piano.
+Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] in May 2019 with an associate’s degree. I’m currently studying at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science, planning to graduate this December! Over the summers of 2021 and 2022, I worked as a Software Engineer&nbsp;Intern at [Adobe] in [Digital&nbsp;Experience][adbe-dx], specifically under <!-- <del>Magento</del> <ins>Adobe Commerce</ins> --> [Adobe&nbsp;Commerce][adbe-commerce]. (Check out my commits on [magento/knowledge-base]!) I like to [write&nbsp;code](/p/) and play the piano.
 
 In my free time, I like to write JavaScript and TypeScript, especially in [Deno]. Check out some of the <a href="/p/" class="callout-text">things&nbsp;I’ve&nbsp;made</a>, I promise you they’re *(kinda)* cool.
 
@@ -46,7 +46,8 @@ In my free time, I like to write JavaScript and TypeScript, especially in [Deno]
 
 <section id="code">
 
-I love to code. It’s my dream to write code for a living. I picked up JavaScript during my freshman year of high school while messing around with Firefox Scratchpad. I naturally went on to learn the other two web languages, HTML and CSS. Over the course of these 5 years, I’ve become fluent in front-end workflow, combining technologies ranging from CI with Heroku and Netlify, GitHub Actions, integration with Visual&nbsp;Studio Code, backends in Deno or Node.js with Express, you name it.
+<!-- "6 years ago": time since October 2016 -->
+I love to code. It’s my dream to write code for a living. I picked up JavaScript during my freshman year of high school while messing around with Firefox Scratchpad. I naturally went on to learn the other two web languages, HTML and CSS. Over the course of these 6 years, I’ve become fluent in front-end workflow, combining technologies ranging from CI with Heroku and Netlify, GitHub Actions, integration with Visual&nbsp;Studio Code, backends in Deno or Node.js with Express, you name it.
 
 </section>
 <section id="contact">

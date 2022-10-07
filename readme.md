@@ -1,8 +1,6 @@
 # benjic.xyz
 Repository for [benjic.xyz], made with [Eleventy] and hosted on [Vercel].
 
-<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/d12fbbdf-4893-473d-a259-d6510cd37741/deploy-status)](https://app.netlify.com/sites/benjic-xyz/deploys) -->
-
 ## Attributions
 
 This [JAMstack] site wouldn’t have been possible without a variety of open-sourced tools and components:

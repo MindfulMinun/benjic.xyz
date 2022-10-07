@@ -21,14 +21,22 @@ module.exports = function () {
     /** @type {MindfulProject[]} */
     out.projects = [
         {
-            name: "mini",
-            desc: "A URL shortener written in Deno.",
-            langs: ["TypeScript"],
-            date: "2021-04-10",
+            name: "Pink",
+            desc: "A simple, lightweight speech-to-text transcription service. Recognize and transcribe over 25 languages.",
+            date: "2022-06-08",
+            langs: ["TypeScript", "Deno"],
             urls: {
-                github: "MindfulMinun/mini",
+                glitch: "mm-pink"
             }
         }, {
+        //     name: "Dumb-dumb vocaloid quiz!",
+        //     desc: "Listen to some vocaloid! Can you identify who's singing?",
+        //     date: "2022-06-08",
+        //     langs: ["TypeScript", "Deno"],
+        //     urls: {
+        //         glitch: "mm-vocaloid"
+        //     }
+        // }, {
             name: "moe-relay",
             desc: "Synchronize various clients to some streaming services, such as YouTube or twist.moe.",
             date: "2020-12-07",

@@ -1,4 +1,5 @@
 {
     // "discord.detailsEditing": "Working on something...",
-    "discord.enabled": true
+    "discord.enabled": true,
+    "deno.enable": false
 }

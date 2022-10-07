@@ -19,9 +19,9 @@
     "node": "^14"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.2",
     "cwebp-bin": "^0.1.4",
-    "sharp": "^0.29.0",
+    "sharp": "^0.31.1",
     "twemoji": "^13.1.0"
   }
 }
