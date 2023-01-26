@@ -1,5 +1,5 @@
 {
-  "name": "11ty",
+  "name": "benjic.xyz",
   "version": "0.1.0",
   "description": "A static site built with 11ty",
   "author": "MindfulMinun <benji@benjic.xyz> (https://benjic.xyz)",
@@ -8,7 +8,8 @@
   "repository": "github:MindfulMinun/11ty",
   "license": "MIT",
   "private": true,
-  "_type": "module",
+  "//": "11ty does not yet support modules. See https://github.com/11ty/eleventy/issues/836",
+  "//type": "module",
   "scripts": {
     "watch": "rm -rf ./dist && npm run build:images & npx @11ty/eleventy --serve --port=1337",
     "build": "rm -rf ./dist && npm run build:images && npx @11ty/eleventy",
@@ -16,13 +17,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-    "node": "^16",
+    "node": "^18",
     "npm": "^8"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.2",
-    "cwebp-bin": "^8.0.0",
-    "sharp": "^0.31.1",
+    "sharp": "^0.31.3",
     "twemoji": "^14.0.0"
   }
 }
