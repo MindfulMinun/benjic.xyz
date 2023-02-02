@@ -140,6 +140,27 @@ html, body {
     margin-bottom: .5em;
 }
 
+details.xyz-details {
+    border: 2px solid var(--outline);
+    padding: 1em;
+    margin: 1em -1em;
+}
+
+details.xyz-details > summary:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+}
+details[open].xyz-details > summary {
+    margin: -1em -1em 1em;
+    border-bottom: 2px solid var(--input-border);
+}
+details.xyz-details summary {
+    cursor: pointer;
+    margin: -1em;
+    padding: 1em;
+    color: var(--input-color);
+}
+
 @media only screen and (min-width: 560px) {
     .sticky.sticky--small {
         margin: 1em auto 0;

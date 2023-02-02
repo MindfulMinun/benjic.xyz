@@ -1,5 +1,5 @@
 ---
-title: About me
+title: Hi there!
 desc: Hi, I’m Benji. I’m supposed to be studying.
 layout: layouts/base
 image:
@@ -9,13 +9,13 @@ image:
 
 # Hi, I’m Benji. 👋🏽
 
-I’m supposed to be studying.
+⚠️ Warning: Cancer and Reproductive Harm
 
 ---
 
 <section id="intro">
 
-Hi, I’m Benji. You might know me as [@MindfulMinun][Twitter] online. I graduated from [Temple&nbsp;College][templejc] in May 2019 with an associate’s degree. I’m currently studying at [UT&nbsp;Dallas][utd], majoring in Computer&nbsp;Science, planning to graduate this December! Over the summers of 2021 and 2022, I worked as a Software Engineer&nbsp;Intern at [Adobe] in [Digital&nbsp;Experience][adbe-dx], specifically under <!-- <del>Magento</del> <ins>Adobe Commerce</ins> --> [Adobe&nbsp;Commerce][adbe-commerce]. (Check out my commits on [magento/knowledge-base]!) I like to [write&nbsp;code](/p/) and play the piano.
+Hi, I’m Benji, also known as [@MindfulMinun][Twitter] online. I <time datetime="2022-12-19" title="December 19th, 2022">recently</time> graduated from [UT Dallas][utd] with a Bachelor's in Computer Science. Currently, I work as a software engineer on the [Adobe Commerce][adbe-commerce] team... <a href="/b/about/" class="callout-text">Keep reading.</a>
 
 In my free time, I like to write JavaScript and TypeScript, especially in [Deno]. Check out some of the <a href="/p/" class="callout-text">things&nbsp;I’ve&nbsp;made</a>, I promise you they’re *(kinda)* cool.
 
@@ -47,7 +47,7 @@ In my free time, I like to write JavaScript and TypeScript, especially in [Deno]
 <section id="code">
 
 <!-- "6 years ago": time since October 2016 -->
-I love to code. It’s my dream to write code for a living. I picked up JavaScript during my freshman year of high school while messing around with Firefox Scratchpad. I naturally went on to learn the other two web languages, HTML and CSS. Over the course of these 6 years, I’ve become fluent in front-end workflow, combining technologies ranging from CI with Heroku and Netlify, GitHub Actions, integration with Visual&nbsp;Studio Code, backends in Deno or Node.js with Express, you name it.
+I love to code. It’s my dream to write code for a living. I picked up JavaScript during my freshman year of high school while messing around with Firefox Scratchpad. I naturally went on to learn the other two web languages, HTML and CSS. Over the course of <time datetime="2016-10" title="October 2016">these 6 years</time>, I’ve become fluent in front-end workflow, combining technologies ranging from CI with Heroku and Netlify, GitHub Actions, integration with Visual&nbsp;Studio Code, backends in Deno or Node.js with Express, you name it.
 
 </section>
 <section id="contact">
@@ -60,18 +60,20 @@ You can find me all over the Internet as [MindfulMinun][Twitter], I can [prove i
 
 </section>
 
-[email]: mailto:benji@benjic.xyz
+
+[email]: mailto:me@benjic.xyz
 [Twitter]: https://twitter.com/MindfulMinun
-[GitHub]: https://github.com/MindfulMinun
-[Glitch]: https://glitch.com/@MindfulMinun
 [Keybase]: https://keybase.io/mindfulminun
 [Discord]: https://discord.com/users/182536071064715264
+[GitHub]: https://github.com/MindfulMinun
+[Glitch]: https://glitch.com/@MindfulMinun
 [Mastodon]: https://mastodon.social/@mindfulminun
 [LinkedIn]: https://www.linkedin.com/in/benji-cerda/
-[Adobe]: https://adobe.com
-[adbe-dx]: https://business.adobe.com/products/adobe-experience-cloud-products.html
-[adbe-commerce]: https://magento.com/
-[templejc]: https://templejc.edu
-[magento/knowledge-base]: https://github.com/magento/knowledge-base/
+[adbe-commerce]: https://business.adobe.com/products/magento/magento-commerce.html
 [utd]: https://utdallas.edu
 [Deno]: https://deno.land
+
+<!-- [Adobe]: https://adobe.com
+[adbe-dx]: https://business.adobe.com/products/adobe-experience-cloud-products.html
+[templejc]: https://templejc.edu
+[magento/knowledge-base]: https://github.com/magento/knowledge-base/ -->
