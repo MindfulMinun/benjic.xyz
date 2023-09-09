@@ -6,7 +6,7 @@
         "permanent": true
     }, {
         "source": "/resume/",
-        "destination": "https://mindfulminun.keybase.pub/documents/cv/current.pdf",
+        "destination": "https://beizmbeynerenmgqshnj.supabase.co/storage/v1/object/public/bookshelf/@/cv/current.pdf",
         "permanent": true
     }]
 }
