@@ -21,6 +21,16 @@ module.exports = function () {
     /** @type {MindfulProject[]} */
     out.projects = [
         {
+            name: "Drawn to Reality",
+            desc: "Help Seiden get over her fears! A 2D platformer made for a game jam by me and five others in less than a week.",
+            date: "2022-02-27",
+            langs: ["C#", "Unity"],
+            urls: {
+                "github": "frizbee19/FebGameJam",
+                "post": "https://www.rizvee.me/drawntoreality"
+            }
+        },
+        {
             name: "Pink",
             desc: "A simple, lightweight speech-to-text transcription service. Recognize and transcribe over 25 languages.",
             date: "2022-06-08",
@@ -28,7 +38,7 @@ module.exports = function () {
             urls: {
                 glitch: "mm-pink"
             }
-        }, {
+        }, { 
         //     name: "Dumb-dumb vocaloid quiz!",
         //     desc: "Listen to some vocaloid! Can you identify who's singing?",
         //     date: "2022-06-08",
