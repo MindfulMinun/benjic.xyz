@@ -1,12 +1,8 @@
 /// <reference lib="dom" />
-console.log(choose([
-    "Hello world! I love you, you are my world. <3",
-    "Wow, you're looking pretty cute today, aren't ya?",
-    "I love you. So much. Please don't ever forget that.",
-    "Look at you, wow! I'm so proud of you!",
-    "Dude, you look so handsome. Everyday you look stunning.",
-    "I believe in you. Trust me, you can do anything."
-]))
+fetch('https://mirai.benjic.xyz/love/phrases')
+    .then(r => r.text())
+    .then(t => console.log(t))
+
 const footerP = document.querySelector('[data-blobify]')
 if (footerP) {
     footerP.innerHTML = '<p>' + choose([
@@ -26,14 +22,8 @@ if (footerP) {
     ]) + '</p>'
 }
 
-if (navigator && navigator.serviceWorker) {
-    navigator.serviceWorker.getRegistrations().then(regs => {
-        for (let reg of regs) reg.unregister()
-    })
-}
-
 /**
- * @see https://mindfulminun.keybase.pub/scripts/lib/array.ts
+ * @see https://doc.deno.land/https://mirai.benjic.xyz/pear@next/core/iterable.ts/~/choose
  * @param {T[]} arr
  * @returns {T}
  * @template T
